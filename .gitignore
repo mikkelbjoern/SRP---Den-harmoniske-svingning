@@ -2,3 +2,8 @@
 *.log
 *.aux
 *.gz
+*.bbl
+*.bcf
+*.dvi
+*.xml
+*.blg
