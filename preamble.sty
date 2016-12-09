@@ -6,6 +6,60 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\usepackage[amsmath,thmmarks]{ntheorem}
+\theorembodyfont{\normalfont}
+
+	
+	%sætnings environment	
+	\newtheorem{thm}{Sætning}
+
+	%Lemma environment	
+	\newtheorem{lemma}[thm]{Lemma}
+	
+	\theoremsymbol{\ensuremath{\circ}}	
+	
+	%definition environment	
+	\newtheorem{definition}[thm]{Definition}
+	
+	%eksempel environment	
+	\newtheorem{eksempel}[thm]{Eksempel}
+	
+	
+	
+	%Bevis environment
+	\theoremstyle{nonumberplain}
+	\theoremheaderfont{%
+	\normalfont\itshape}
+	\theorembodyfont{\normalfont}
+	\theoremsymbol{\ensuremath{\square}}
+	\theoremseparator{.}
+	
+	\newtheorem{proof}{Bevis}
+	\newtheorem{los}{Løsning}
+
+
+\setlength\parindent{0pt}
+
+%\titleformat{\section}{\Large\bfseries}{}{0pt}{#1}
+%\titleformat{\subsection}{\large\bfseries}{}{0pt}{#1}
+
+
+%nye komandoer - mængder
+\newcommand{\mR}{\mathbb{R}}
+\newcommand{\mZ}{\mathbb{Z}}
+\newcommand{\mN}{\mathbb{N}}
+\newcommand{\mQ}{\mathbb{Q}}
+\newcommand{\mC}{\mathbb{C}}
+
+
+
+
 \usepackage{tikz}
 \usetikzlibrary{calc,patterns,decorations.pathmorphing,decorations.markings}
 
