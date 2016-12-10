@@ -5,3 +5,5 @@
 *.dvi
 *.out
 *.thm
+*.toc
+*.idx
