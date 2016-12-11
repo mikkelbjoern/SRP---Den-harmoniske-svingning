@@ -8,7 +8,7 @@ Mine udledninger her er stærkt inspirerede af Kalkulus\refKalkulus{529-539}.
 
 Jeg vil først vise et lemma der vil gøre mine udregninger nemmere senere.
 
-\begin{lemma}
+\begin{lemma}\label{thm: Summen af to losninger er en losning}
 Hvis $g$ og $h$ er løsninger til den lineære andenordens differentialligning, da er $y(x) = C\cdot g(x) + D \cdot h(x)$ også en løsning for alle reelle konstanter $C,D$. 
 \end{lemma}
 
@@ -43,7 +43,7 @@ Grunden til at jeg ikke kigger på der hvor den har en reel rod, er at det kræv
 Jeg vil nu kigge på løsninger til den lineære andenordens differentialligning. 
 Først indser jeg at $e^{rx}$ er en løsning til den lineære andenordens differentialligning hvis ellers $r$ er en løsning til den karakterligningen.
 
-\begin{thm}
+\begin{thm}\label{thm: e^rx er en losning}
 Lad en lineær andenordens differentialligning være på formen $y'' + by' + cy = 0$ og lad $r$ være en løsning til karakterligningen for denne.
 Da er $e^{rx}$ en løsning til differentialligningen. 
 \end{thm}
@@ -63,4 +63,13 @@ y'' + by' + cy 	&= (e^{rx})'' + b\cdot (e^{rx})' + c\cdot e^{rx} \\
 \end{align*}
 
 Da er det vist at $y=e^{rx}$ får differentialligningen til at blive $0$ og at dette derfor er en løsning. 
+\end{proof}
+
+\begin{thm}
+$y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ er en løsning til differentialligningen $y'' + by' + c = 0$ hvis $r_1$ og $r_2$ er reelle løsninger til dennes karakterligning, hvor $C,D$ er vilkårlige reelle tal.
+\end{thm}
+\begin{proof}
+Vi ser først at $e^{r_1 x}$ og $e^{r_2 x}$ begge hver for sig er løsninger ved brug af sætning \ref{thm: e^rx er en losning}.
+Derefter kan vi bruge sætning \ref{thm: Summen af to losninger er en losning} til at se at disse to løsninger ganget med vilkårlige konstanter også er en løsning.
+Dermed må $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ være en løsning til differentialligningen. 
 \end{proof}
