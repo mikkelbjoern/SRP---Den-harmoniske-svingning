@@ -8,3 +8,4 @@ Ved referencer bruges titler på følgende måder:
 
   - teori:*	; refererer til et teoriafsnit om et givent emne: *
   - fig:*	; refererer til en figur der indeholder *
+  - def:*	; refererer til en definition omkring *
