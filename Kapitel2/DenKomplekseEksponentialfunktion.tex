@@ -1,0 +1,37 @@
+\section{Den komplekse eksponentialfunktion}
+I gymnasiet bliver man kort introduceret til de komplekse tal, og jeg tager derfor for givet at læseren kan løse en andengradsligning hvor diskriminanten er skarpt mindre end $0$ og derfor giver to komplekse løsninger. 
+I gymnasiet lærer man dog ikke at kunne opløfte tal i komplekse tal. 
+Dette er dog en nødvendighed at kunne i denne opgave. 
+Jeg vil derfor introducere definitionen af eksponentialfunktionen, defineret med $\mC$ som domæne og $\mC$ som ko-domæne. 
+Jeg vil ikke argumentere for at denne opfører sig som den konventionelle definition med $\mR$, men bare lave en reference til en note fra DTU hvor dette kan ses. 
+
+\begin{definition}[Den komplekse eksponentialfunktion]\label{def: Den komplekse eksponentialfunktion}
+
+Lad $z=a+bi$ være et vilkårligt komplekst tal. Vi kalder da den komplekse eksponentialfunktion for $exp_\mC$. 
+Vi definerer da denne til at være lig $exp_\mC (z)=e^{a} \cdot (cos(b) + sin(b)i)$.
+Hvor $e$ er Eulers tal. 
+\end{definition}
+
+\begin{thm}\label{thm: expC = e^x}
+$exp_\mC (x) = e^x$ hvis $x$ er et reelt tal. 
+\end{thm}
+
+\begin{proof}
+Dette ses ret tydeligt ved at sætte $x+0i$ ind i definitionen af $exp_\mC$, der da vil blive $$exp_\mC(x) = e^x \cdot (cos(0)+sin(0)i)=e^x \cdot 1 = e^x$$
+Dermed vist $exp_\mC (x) = e^x, \forall x \in \mR$
+\end{proof}
+
+\begin{thm}[Regneregler for $\exp_\mC$]\label{thm: regneregler for expC}
+Følgende regneregler gælder for den komplekse eksponentialfunktion:
+\begin{enumerate}
+	\item $\eC (0)=1$
+	\item $\eC (z_1+z_2) = \eC (z_1) \cdot \eC(z_2)$ for alle komplekse tal $z_1$ og $z_2$
+	\item $(\eC (z))^n = exp_C (zn)$ for alle $n\in mN$ og $z \in \mZ$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+Beviset for sætning \ref{thm: regneregler for expC} er ikke medtaget her grundet mangel på plads. Det kan læses i DTU's note om komplekse tal\refDTUKompleks{29.44}. 
+\end{proof}
+
+Vi kan se at $\eC$ opfører sig på mange måder på samme måde som $e^x$, og specielt fordi $\eC$ altid tager de samme værdier som $e^x$ hvor $e^x$ er defineret (de reelle tal, se sætning \ref{thm: expC = e^x}), tillader vi os fremover at lade $e^x$ beskrive $\eC (x)$, og dermed er $e^x$ altså defineret fra $\mC$ over i $\mC$.
