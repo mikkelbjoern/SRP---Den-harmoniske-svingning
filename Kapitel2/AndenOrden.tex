@@ -39,3 +39,28 @@ Jeg vil i denne udledning kigge på to tilfælde af karakterligningen.
 Der hvor den har to komplekse løsninger og der hvor den har to reelle.
 Grunden til at jeg ikke kigger på der hvor den har en reel rod, er at det kræver at $b^2 = 4c$ (da dette gør diskriminanten til $0$), hvilket er et særligt specialtilfælde, som meget sjældent vil forekomme i fysikken.
 
+\subsection{To reelle løsninger af karakterligningen}
+Jeg vil nu kigge på løsninger til den lineære andenordens differentialligning. 
+Først indser jeg at $e^{rx}$ er en løsning til den lineære andenordens differentialligning hvis ellers $r$ er en løsning til den karakterligningen.
+
+\begin{thm}
+Lad en lineær andenordens differentialligning være på formen $y'' + by' + cy = 0$ og lad $r$ være en løsning til karakterligningen for denne.
+Da er $e^{rx}$ en løsning til differentialligningen. 
+\end{thm}
+
+\begin{proof}
+Jeg ser først på funktionen differentieret og dobbelt differentieret. Begge disse kan findes ved normale regler for differentiation: 
+$(e^{rx})' = r \cdot e^{rx}$ og 
+$(e^{rx})'' = r\cdot (e^{rx})' = r^2 \cdot e^{rx}$.
+
+Jeg indsætter nu funktionen i ligningen:
+\begin{align*}
+y'' + by' + cy 	&= (e^{rx})'' + b\cdot (e^{rx})' + c\cdot e^{rx} \\
+				&= r^2 \cdot e^{rx} + br\cdot e^{rx} + c e^{rx} \\
+				&= e^{rx} (r^2 + br + c) \\
+				&= e^{rx} \cdot 0 		& \text{(Da $r$ er en løsning til karakterligningen)}\\
+				&=0
+\end{align*}
+
+Da er det vist at $y=e^{rx}$ får differentialligningen til at blive $0$ og at dette derfor er en løsning. 
+\end{proof}
