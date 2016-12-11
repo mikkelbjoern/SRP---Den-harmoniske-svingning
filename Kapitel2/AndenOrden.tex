@@ -1,0 +1,38 @@
+\section{Den andenordens lineære homogene differentialligning}
+Det store problem i denne opgave er at bestemme den fuldstændige løsning til differentialligningerne der er beskrevet i afsnit \ref{teori: opsatning af differentialligninger}.
+Disse er kan begge beskrives på formen $y'' + by' + cy = 0$, hvor $b,c \in \mR$ og $y$ er en differentialbel funktion fra de reelle tal over i de reelle tal. 
+Bemærk her at der ikke er et konstantled foran $y''$. 
+Dette gør ikke at vi mister generalitet, da vi altid ville kunne dividere hele ligningen igennem med den konstant der havde stået foran $y''$, og vi ville da have fået det på den ovenstående form. 
+Jeg vil i dette afsnit bestemme den fuldstændige løsning til denne ligning. 
+Mine udledninger her er stærkt inspirerede af Kalkulus\refKalkulus{529-539}. 
+
+Jeg vil først vise et lemma der vil gøre mine udregninger nemmere senere.
+
+\begin{lemma}
+Hvis $g$ og $h$ er løsninger til den lineære andenordens differentialligning, da er $y(x) = C\cdot g(x) + D \cdot h(x)$ også en løsning for alle reelle konstanter $C,D$. 
+\end{lemma}
+
+\begin{proof}
+Antag af $h$ og $g$ er løsninger til den lineære andenordens differentialligning. 
+Vi starter med at indse at $y'=Cg' + Dh'$ og $y'' = Cg'' + Dh''$, ved brug af normale regler for differentiation. 
+
+Vi betragter da ligningen med $y$ indsat:
+\begin{align*}
+y'' + by' + cy 	&= (Cg'' + Dh'') + b(Cg' + Dh') + c(Ch + Dh)	& \text{(Egenskaberne beskrevet ovenfor)}\\
+				&= Cg'' + Dh'' + bCg' + bDh' + cCh + cDh		\\
+				&= C(g'' + bg' + cg) + D(h'' + b'h + ch)		& \text{(Sætter udenfor parantes)}\\
+				&= C\cdot 0 + D \cdot 0							& \text{(Udnytter at $g$ og $h$ er løsninger)}\\
+				&= 0 
+\end{align*}
+Da kan vi ses at $y'' + by' + cy = 0$, dermed er $y$ er løsning til differentialligningen.
+\end{proof}
+
+Når vi snakker om lineære andenordens differentialligninger, er koefficienterne helt centrale for den fuldstændige løsning. 
+Det vil vise sig senere, at en tilhørende andengradsligning til en lineær andenordens differentialligning, er helt central. Vi kalder denne for den \textit{Karakterligningen}.
+
+\begin{definition}[Karakterligningen]
+Karakterligningen for en lineær andenordens differentialligning $y'' + by' + cy = 0$, er ligningen $r^2 + br + c = 0$. 
+Denne ligning har som bekendt en eller to komplekse løsninger $r_1 = \frac{-b + \sqrt{b^2 - 4c}}{2}$ og $r_2 = \frac{-b - \sqrt{b^2 - 4c}}{2}$. 
+Fremover vil $r_1$ og $r_2$ referere til disse to definitioner af løsninger af karakterligningen for en given lineær andenordens differentialligning.
+
+\end{definition}
