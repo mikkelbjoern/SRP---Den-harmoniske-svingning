@@ -65,11 +65,67 @@ y'' + by' + cy 	&= (e^{rx})'' + b\cdot (e^{rx})' + c\cdot e^{rx} \\
 Da er det vist at $y=e^{rx}$ får differentialligningen til at blive $0$ og at dette derfor er en løsning. 
 \end{proof}
 
-\begin{thm}
+\begin{thm}\label{thm: Den fuldstandige losning er en losning}
 $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ er en løsning til differentialligningen $y'' + by' + c = 0$ hvis $r_1$ og $r_2$ er reelle løsninger til dennes karakterligning, hvor $C,D$ er vilkårlige reelle tal.
 \end{thm}
 \begin{proof}
 Vi ser først at $e^{r_1 x}$ og $e^{r_2 x}$ begge hver for sig er løsninger ved brug af sætning \ref{thm: e^rx er en losning}.
 Derefter kan vi bruge sætning \ref{thm: Summen af to losninger er en losning} til at se at disse to løsninger ganget med vilkårlige konstanter også er en løsning.
 Dermed må $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ være en løsning til differentialligningen. 
+\end{proof}
+
+\begin{thm}[Den fuldstændige løsning til den lineære andenordens differentialligning]\label{thm: fuldstandig losning}
+Den fuldstændige løsning til differentialligningen $y'' + by' + cy = 0$, med en karakterligning med to reelle løsninger $r_1$ og $r_2$ er mængden af alle funktioner på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ hvor $C,D$ er vilkårlige reelle konstanter.
+\end{thm}
+\begin{proof}
+Det følger af sætning \ref{thm: Den fuldstandige losning er en losning}, at $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ rent faktisk er en løsning. 
+Da mangler jeg bare at vise at hvis der eksisterer en løsning, så er den på netop denne form.
+
+Først ses en egenskab omkring rødderne den karakteristiske ligning. 
+Da vi ved at $r^2 + br + c$ har rødder $r_1$ og $r_2$, ved vi med algebraens fundamentalsætning (denne sætning er ikke vist i denne opgave, da det vil være for omfattende, men beviset kan ses i Kalkulus\refKalkulus{139-140}), at vi kan faktorisere ligningen sådan at: $r^2 + br + c = (r-r_1)(r - r_2) = r^2 -(r_1 + r_2)r + r_1 r_2$. 
+Dermed kan vi se at $r_1 + r_2 = -b$, da disse begge er koefficienter foran $r$. 
+Denne egenskab vil blive brugt imod slutningen af beviset. 
+
+Vi antager at en funktion $f$ er en løsning til differentialligningen. 
+Da vil jeg vise, at $f$ må være på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$. 
+
+Jeg introducerer en hjælpefunktion $u = \frac{f}{e^{r_1 x}}$. 
+Ved omskrivning ses da $f = u \cdot e^{r_1 x}$. 
+For at forsimple mine omskrivninger om lidt, vil jeg nu kigge på hvordan $f'$ og $f''$ kan skrives, ud fra $u$.
+Alle følgende omskrivninger sker ved produktreglen(da både $u$ og $e^{r_1 x}$ er funktioner af $x$):
+$$f' = (u e^{r_1 x})' = u'e^{r_1 x} + ur_1 e^{r_1 x}$$
+$$f'' = (f')' = (u'e^{r_1 x} + ur_1 e^{r_1 x})' = u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}$$
+
+Da jeg ved at $f$ er en løsning til differentialligningen, kan jeg opskrive differentialligninen og substituere $f, f'$ og $f''$, med de forskrifter som jeg har fået ved brug af $u$. 
+\begin{align*}
+0 	&= f'' + bf' + cf \\
+	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x})\\
+	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}\\
+	&= u r_1^2 e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x} + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x}  & \text{(Rokerer rundt på led)}\\
+	&= ue^{r_1 x}(r_1^2  + br_1 + c) + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{(Rykker $ue^{r_1 x}$ udenfor  parantes)}\\
+	&= ue^{r_1 x} \cdot 0+ u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($r_1$ er løsning til karakterligningen)}\\
+	&= e^{r_1 x} (u'' + (2r_1 + b)u') & \text{(Sætter udenfor parantes)}\\
+	&= u'' + (2r_1 + b)u' & \text{(Dividerer med $e^{r_1 x}$)}
+\end{align*}
+Vi har da ligningen $u'' + (2r_1 + b)u' = 0$. 
+Lad da en ny hjælpefunktion $h$ være defineret som $h = u'$. 
+Da kan vi indsætte $h$ i den anden ligning og få:
+$h' + (2r_1 + b)h = 0$. 
+Dette er en differentialligning af første orden, som vi allerede har fundet en løsning på i sætning \ref{thm:y'=k*y}, 
+hvor vi i dette tilfælde har vi $k = -(2r_1 + b)$.
+Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)}$ hvor $K$ er et vilkårligt reelt tal. 
+Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)} + C$ hvor $C$ er integrationskonstanten. 
+Vi ser at $\frac{K}{2r_1 + b}$ er en konstant, som vi kan kalde $D$.
+Da ved jeg også at $f=u\cdot e^{r_1 x}$, jeg kan da ved at indsætte min fundne værdi af $u$, finde en form på $f$:
+\begin{align*}
+f 	&= ue^{r_1 x}\\
+	&= (D e^{-(2r_1 + b)} + C)e^{r_1 x} \\
+	&= D \cdot e^{-(2r_1 + b)+r_1} + C\cdot e^{r_1 x}\\
+	&= D \cdot e^{-r_1 - b} + C\cdot e^{r_1 x}\\
+\end{align*}
+
+Fra start så vi dog sammenhængen at $r_1 + r_2 = -b$ og jeg kan derfor substituere $-b$ ind og få:
+$$f(x) = D \cdot e^{-r_1 +r_1 + r_2} + C\cdot e^{r_1 x}= D \cdot e^{r_2} + C\cdot e^{r_1 x}$$
+
+Og da er det netop vist at hvis $f$ er en løsning til differentialligningen, da er det også på formen $D \cdot e^{r_2} + C\cdot e^{r_1 x}$.
 \end{proof}
