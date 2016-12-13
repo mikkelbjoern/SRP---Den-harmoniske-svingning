@@ -80,15 +80,19 @@ Lod & $32.45$ \\
 \end{table}
 
 \subsection{Databehandling}
+
+\subsubsection{Best-fit kurver}
 For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
 Det tilføjede $s_0$ for enden skyldes at loddet har hængt en afstand over ultralydsensoren som der skal justeres for. 
+
+I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac{k}{m}}, \phi ,s_0$ og så den gennemsnitlige afvigelse målt i meter (RMSE).
 
 
 \begin{table}
 \centering
-\begin{tabular}{|l|c|c|c|c|l|}
+\begin{tabular}{|l|c|c|c|c|c|}
 \hline
-\textbf{}          & \textbf{A} & \textbf{$\sqrt{\frac{k}{m}}$} & \textbf{$\phi$} & \textbf{$s_0$} & \textbf{RMSE} \\ \hline
+\textbf{}          & \textbf{A}($m$) & \textbf{$\sqrt{\frac{k}{m}}$}($s^{-1}$) & \textbf{$\phi$} & \textbf{$s_0$}($m$) & \textbf{RMSE }($m$) \\ \hline
 \textbf{Forsøg 10} & 0,08854    & 7,73                          & 584,8           & 0,2929         & 0,003136      \\ \hline
 \textbf{Forsøg 1}  & 0,04319    & 7,632                         & 6,99            & 0,2984         & 0,001839      \\ \hline
 \textbf{Forsøg 2}  & 0,06744    & 7,669                         & 20,9            & 0,2963         & 0,001766      \\ \hline
@@ -102,7 +106,17 @@ Det tilføjede $s_0$ for enden skyldes at loddet har hængt en afstand over ultr
 \end{tabular}
 
 \caption{De forskellige værdier på best-fit kurver}
+\label{tabel: bestfitkurver forsog 1}
 \end{table}
+
+\subsubsection{Vurdering af data}
+Det første der er værd at bemærke, er at værdierne af $\sqrt{\frac{k}{m}}$ ligger meget tæt på hinanden. 
+Dette stemmer godt overens med teorien da denne værdi ikke bør være afhængig af hvor meget der energi der bliver tilførst systemet til at starte med, men kun hvilken masse lodet har og hvilken fjederkonstant fjederen har. 
+Da forsøget er lavet med samme fjeder og samme lod, må man forvente samme værdi, hvilket også er det vi observerer, da der kun er en forskel på $7.734s^{-1}-7.632s^{-1}=0.102s^{-1}$ på den største og mindste værdi, hvilket er relativt lidt i forhold til de ca. 7 en halv tallene ligger på.
+
+Derudover er det værd at bemærke de meget lave afvigelser. 
+Den gennemsnitlige afvigelse ligger imellem $0.3136cm$ og $0.4427cm$ i forhold til amplituder på helt op til $8.944cm$. 
+Dette må anses som forholdsvist små afvigelser i forhold til hele bevægelsen.
 
 \subsection{Konklusion}
 
