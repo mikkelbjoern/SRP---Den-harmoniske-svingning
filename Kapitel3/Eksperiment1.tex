@@ -36,6 +36,22 @@ Jeg gentog dette forsøg 10 gange.
 
 
 \subsection{Hypotese}
+Da dette forsøg forløber over forholdsvist kort tid, forventer jeg at man betragte denne bevægelse som om den ikke er dæmpet, da dæmpningsledet vil være forholdvist småt. 
+Dermed forventes differentialligningen 
+$$m\cdot x'' = -k \cdot x$$
+at være opfyldt, jvf. afsnit \ref{teori: Opstilling ligning uden dampning}.
+Dette kan omskrives til $m\cdot x'' + k\cdot x=0$, hvilket vi ser er en andenordens lineær homogen differentialligning. 
+Vi kan derfor bestemme en karakterligning som $mr^2 + k = 0 \Rightarrow r^2 + \frac{k}{m} = 0$ og dermed får vi $r = \frac{\pm \sqrt{-4\frac{k}{m}}}{2}=\pm\sqrt{\frac{k}{m}}i$.
+Dermed skal vi have fat i den løsning af differentialligningen hvor løsningerne til karakterligningen er komplekse. 
+Vi får da at løsningen skal være på formen (se afsnit \ref{teori: Komplekse losninger i karakterligningen}:
+$$y(x) = e^{ax}A\sin(bx+\phi) \text{ hvor rødderne i karakterligningen er } r = a \pm bi$$
+Vi ser dog her at rødderne i vores karakterligning ikke har nogen realdel, og dermed får vi at $e^{ax}=e^{0x}=1$.
+Da $b=\sqrt{\frac{k}{m}}$ forventer vi derfor at bevægelsen vil kunne beskrives som 
+$$x(t)=A\sin (\frac{k}{m}t+\phi)$$
+hvor $\phi$ er en eller anden konstant. 
+
+
+\subsection{Data}
 
 \subsection{Databehandling}
 
