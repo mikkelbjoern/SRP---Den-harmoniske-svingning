@@ -80,8 +80,29 @@ Lod & $32.45$ \\
 \end{table}
 
 \subsection{Databehandling}
-For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\frac{k}{m}t+\phi) + c$.
-Det tilføjede $c$ for enden skyldes at loddet har hængt en afstand over ultralydsensoren som der skal justeres for. 
+For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
+Det tilføjede $s_0$ for enden skyldes at loddet har hængt en afstand over ultralydsensoren som der skal justeres for. 
+
+
+\begin{table}
+\centering
+\begin{tabular}{|l|c|c|c|c|l|}
+\hline
+\textbf{}          & \textbf{A} & \textbf{$\sqrt{\frac{k}{m}}$} & \textbf{$\phi$} & \textbf{$s_0$} & \textbf{RMSE} \\ \hline
+\textbf{Forsøg 10} & 0,08854    & 7,73                          & 584,8           & 0,2929         & 0,003136      \\ \hline
+\textbf{Forsøg 1}  & 0,04319    & 7,632                         & 6,99            & 0,2984         & 0,001839      \\ \hline
+\textbf{Forsøg 2}  & 0,06744    & 7,669                         & 20,9            & 0,2963         & 0,001766      \\ \hline
+\textbf{Forsøg 3}  & 0,07559    & 7,692                         & 38,58           & 0,2948         & 0,002061      \\ \hline
+\textbf{Forsøg 4}  & 0,081      & 7,707                         & -1,786          & 0,2933         & 0,003476      \\ \hline
+\textbf{Forsøg 5}  & 0,08944    & 7,734                         & -1,145          & 0,2936         & 0,004427      \\ \hline
+\textbf{Forsøg 6}  & 0,08174    & 7,709                         & 3,467           & 0,294          & 0,00381       \\ \hline
+\textbf{Forsøg 7}  & 0,06552    & 7,663                         & 818,2           & 0,2954         & 0,001818      \\ \hline
+\textbf{Forsøg 8}  & 0,05712    & 7,648                         & 9,939           & 0,2965         & 0,001589      \\ \hline
+\textbf{Forsøg 9}  & 0,04544    & 7,633                         & 9,7             & 0,297          & 0,001462      \\ \hline
+\end{tabular}
+
+\caption{De forskellige værdier på best-fit kurver}
+\end{table}
 
 \subsection{Konklusion}
 
