@@ -1,0 +1,398 @@
+
+\documentclass{article} % Don't change this
+
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[siunitx]{circuitikz}
+\usepackage{tikz}
+\usepackage[colorinlistoftodos, color=orange!50]{todonotes}
+\usepackage{hyperref}
+\usepackage[numbers, square]{natbib}
+\usepackage{fancybox}
+\usepackage{epsfig}
+\usepackage{soul}
+\usepackage[framemethod=tikz]{mdframed}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%     _____ _    _  _____ _______ ____  __  __ 
+%    / ____| |  | |/ ____|__   __/ __ \|  \/  |
+%   | |    | |  | | (___    | | | |  | | \  / |
+%   | |    | |  | |\___ \   | | | |  | | |\/| |
+%   | |____| |__| |____) |  | | | |__| | |  | |
+%    \_____|\____/|_____/   |_|  \____/|_|  |_|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  _____ ____  __  __ __  __          _   _ _____   _____ 
+% / ____/ __ \|  \/  |  \/  |   /\   | \ | |  __ \ / ____|
+%| |   | |  | | \  / | \  / |  /  \  |  \| | |  | | (___  
+%| |   | |  | | |\/| | |\/| | / /\ \ | . ` | |  | |\___ \ 
+%| |___| |__| | |  | | |  | |/ ____ \| |\  | |__| |____) |
+% \_____\____/|_|  |_|_|  |_/_/    \_\_| \_|_____/|_____/ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SYNTAX FOR NEW COMMANDS:
+%\newcommand{\new}{Old command or text}
+
+% EXAMPLE:
+
+\newcommand{\blah}{blah blah blah \dots}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  _______ ______          _____ _    _ ______ _____  
+% |__   __|  ____|   /\   / ____| |  | |  ____|  __ \ 
+%    | |  | |__     /  \ | |    | |__| | |__  | |__) |
+%    | |  |  __|   / /\ \| |    |  __  |  __| |  _  / 
+%    | |  | |____ / ____ \ |____| |  | | |____| | \ \ 
+%    |_|  |______/_/    \_\_____|_|  |_|______|_|  \_\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \english
+% \units 
+% \spelling 
+% \source 
+% \concept
+% \arbitrary{comment}{points}
+% \summary{General Comments}
+
+\setlength{\marginparwidth}{3.4cm}
+
+% NEW COUNTERS
+\newcounter{points}
+\setcounter{points}{100}
+\newcounter{spelling}
+\newcounter{usage}
+\newcounter{units}
+\newcounter{other}
+\newcounter{source}
+\newcounter{concept}
+\newcounter{missing}
+\newcounter{math}
+
+% COMMANDS
+%\newcommand{\raisa}[2]{\colorbox{Yellow}{#1} \todo{#2}}
+\newcommand{\arbitrary}[2]{\todo{#1 #2} \addtocounter{points}{#2} \addtocounter{other}{#2}}
+\newcommand{\english}{\todo{LANGUAGE (-1)} \addtocounter{points}{-1}
+\addtocounter{usage}{-1}}
+\newcommand{\units}{\todo{UNITS (-1)} \addtocounter{points}{-1}
+\addtocounter{units}{-1}}
+\newcommand{\spelling}{\todo{SPELLING and GRAMMAR (-1)} \addtocounter{points}{-1}
+\addtocounter{spelling}{-1}}
+\newcommand{\source}{\todo{SOURCE(S) (-2)} \addtocounter{points}{-2}
+\addtocounter{source}{-2}}
+\newcommand{\concept}{\todo{CONCEPT (-2)} \addtocounter{points}{-2}
+\addtocounter{concept}{-2}}
+\newcommand{\missing}[2]{\todo{MISSING CONTENT (#1) #2} \addtocounter{points}{#1}
+\addtocounter{missing}{#1}}
+\newcommand{\maths}{\todo{MATH (-1)} \addtocounter{points}{-1}
+\addtocounter{math}{-1}}
+
+\newcommand{\summary}[1]{
+\begin{mdframed}[nobreak=true]
+\begin{minipage}{\textwidth}
+\vspace{0.5cm}
+\begin{center}
+\Large{Grade Summary} \hrule 
+\end{center} \vspace{0.5cm}
+General Comments: #1
+
+\vspace{0.5cm}
+Possible Points \dotfill 100 \\
+Points Lost (Spelling and Grammar) \dotfill \thespelling \\
+Points Lost (Language) \dotfill \theusage \\
+Points Lost (Units) \dotfill \theunits \\
+Points Lost (Math) \dotfill \themath \\
+Points Lost (Sources) \dotfill \thesource \\
+Points Lost (Concept) \dotfill \theconcept \\
+Points Lost (Missing Content) \dotfill \themissing \\
+Other \dotfill \theother \\[0.5cm]
+\begin{center}
+\large{\textbf{Grade:} \fbox{\thepoints}}
+\end{center}
+\end{minipage}
+\end{mdframed}}
+
+%#########################################################
+
+%To use symbols for footnotes
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%To change footnotes back to numbers uncomment the following line
+%\renewcommand*{\thefootnote}{\arabic{footnote}}
+
+% Enable this command to adjust line spacing for inline math equations.
+% \everymath{\displaystyle}
+
+% _______ _____ _______ _      ______ 
+%|__   __|_   _|__   __| |    |  ____|
+%   | |    | |    | |  | |    | |__   
+%   | |    | |    | |  | |    |  __|  
+%   | |   _| |_   | |  | |____| |____ 
+%   |_|  |_____|  |_|  |______|______|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{
+\normalfont \normalsize 
+\textsc{Nørre Gymnasium, 3r\\ SRP i Matematik og Fysik} \\
+[10pt] 
+\rule{\linewidth}{0.5pt} \\[6pt] 
+\huge Forsøgsplan:\\Dæmpet harmonisk svingning af fjedder \\
+\rule{\linewidth}{2pt}  \\[10pt]
+}
+\author{Mikkel Bjørn Goldschmidt}
+\date{\normalsize \today}
+
+\begin{document}
+
+\maketitle
+\noindent
+Udførselsdato \dotfill 30. november, 2016 \\
+Lærer \dotfill Kim Vedel Pedersen \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%             ______      ____  
+%            |  ____/\   / __ \ 
+%            | |__ /  \ | |  | |
+%            |  __/ /\ \| |  | |
+%            | | / ____ \ |__| |
+%            |_|/_/    \_\___\_\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% Ctrl + / to comment out a group of lines.
+%
+%
+% LIST MORE COMMON COMMMANDS
+% LIST USEFUL WEBSITES FOR TABLES, ETC
+% WHAT TO DO WHEN YOUR CODE WONT COMPILE
+% OVERLEAF SHORTCUTS
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% _               ____  
+%| |        /\   |  _ \ 
+%| |       /  \  | |_) |
+%| |      / /\ \ |  _ < 
+%| |____ / ____ \| |_) |
+%|______/_/    \_\____/ 
+%%%%%%%%%%%%%%%%%%%%%%%%
+%  _____ _______       _____ _______ _____ 
+% / ____|__   __|/\   |  __ \__   __/ ____|
+%| (___    | |  /  \  | |__) | | | | (___  
+% \___ \   | | / /\ \ |  _  /  | |  \___ \ 
+% ____) |  | |/ ____ \| | \ \  | |  ____) |
+%|_____/   |_/_/    \_\_|  \_\ |_| |_____/ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% _    _ ______ _____  ______ 
+%| |  | |  ____|  __ \|  ____|
+%| |__| | |__  | |__) | |__   
+%|  __  |  __| |  _  /|  __|  
+%| |  | | |____| | \ \| |____ 
+%|_|  |_|______|_|  \_\______|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formål}
+
+Formålet med dette forsøg er at undersøge den svingning en fjedder udfører over tid. Først ved at undersøge hvordan fjedderen over en kort periode hvor der ses bort fra luftmodstand. Derefter over en længere periode hvor luftmodstanden tages i betragtning, samt en udførsel af forsøget under vand hvor vandens modstand tages i betragtning.
+
+
+
+\section{Hypotese}
+Det forventes at bevægelsen i det første forsøg over kort tid, tilnærmelsesvist vil kunne beskrives som en harmonisk svingning, altså på formen: $A\cdot \sin(\omega t + \psi)$.
+
+Det forventes at bevægelsen der i forsøget hvor luftmodstand tages i betragtning vil kunne beskrives som en dæmpet harmonisk svingning, og altså opfylde differentialligningen $m\cdot x'' = k \cdot x -F_t - c \cdot x'$.
+
+Det forventes i forsøget med vand, at den vil opfylde en lignende differentialligning. Her forventes det dog at hastighedledet vil være i anden, sådan at bevægelsen opfylder $m\cdot x'' = k \cdot x -F_t - c \cdot (x')^2$.
+
+
+
+
+%\cite{reference_number} in order to cite a source 
+%##########################################
+
+% __  __       _______ ______ _____  _____          _       _____ 
+%|  \/  |   /\|__   __|  ____|  __ \|_   _|   /\   | |     / ____|
+%| \  / |  /  \  | |  | |__  | |__) | | |    /  \  | |    | (___  
+%| |\/| | / /\ \ | |  |  __| |  _  /  | |   / /\ \ | |     \___ \ 
+%| |  | |/ ____ \| |  | |____| | \ \ _| |_ / ____ \| |____ ____) |
+%|_|  |_/_/    \_\_|  |______|_|  \_\_____/_/    \_\______|_____/ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\section {Materialer}
+
+\begin{itemize}
+	\item Lod på $100g$, massen bør være irrelevant, men kan eventuelt varieres ved flere udførsler
+	\item Fjedder
+	\item Kraftmåler
+	\item Stativ til opsætning af fjedder
+	\item Balje med vand
+	\item Ultralydsensor
+	\item Lille papplade til at skabe luftmodstand
+	 
+\end{itemize}
+
+
+
+
+
+
+
+%#################################################################
+% _____  _____   ____   _____ ______ _____  _    _ _____  ______ 
+%|  __ \|  __ \ / __ \ / ____|  ____|  __ \| |  | |  __ \|  ____|
+%| |__) | |__) | |  | | |    | |__  | |  | | |  | | |__) | |__   
+%|  ___/|  _  /| |  | | |    |  __| | |  | | |  | |  _  /|  __|  
+%| |    | | \ \| |__| | |____| |____| |__| | |__| | | \ \| |____ 
+%|_|    |_|  \_\\____/ \_____|______|_____/ \____/|_|  \_\______|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Fremgansmåde}
+\subsection{Forberedelse}
+\begin{itemize}
+	\item Bestemmelse af fjedderkostant for fjedderen:
+		\begin{enumerate}
+			\item Brug kraftmåleren til at måle hvilken kraft fjederen trækker i forskellige udstrækningslængder
+			\item Indskriv data i LoggerPro
+			\item Lav en proportionel regression
+			\item Hvis ikke forklaringsgraden er høj anskaffes en my fjedder, ellers bruges hældningen som fjedderkonstant.
+		\end{enumerate}
+	\item Undersøg ultralydsensor
+		\begin{enumerate}
+			\item Brug en tavlelineal til at finde ud af hvor højt/lavt den kan måle
+		\end{enumerate}
+\end{itemize}
+\subsection{Delforsøg a}
+\begin{enumerate}
+	\item Opstil stativ med fjedder og lod hængende i. Opsæt ultralydsensor i passende afstand under loddet (med passende menes passende i forhold til i hvilket område ultralydsensoren kunne måle)
+	\item Bring loddet i svingninger mens der måles i 10 sekunder med 10 målinger per sekund.
+	\item Gentag forsøget 3-5 gange.	
+\end{enumerate}
+
+\subsection{Delforsøg b}
+\begin{enumerate}
+	\item Der laves samme opstilling som i Delforsøg a. Denne gang påsættes pappladen bare for at skabe mere luftmodstand i bevægelsen.
+	\item Bring loddet i svingninger mens der måles i 100 sekunder med 10 målinger i sekundet.
+	\item Gentag forsøg 3-5 gange.
+\end{enumerate}
+
+\subsection{Delforsøg c}
+\begin{enumerate}
+	\item Stativet opstilles nu over baljen med vand. 
+	\item \textbf{HVORDAN FORETAGES MÅLINGER HER?}
+\end{enumerate}
+
+
+
+
+
+%##################################################################
+
+% _____       _______       
+%|  __ \   /\|__   __|/\    
+%| |  | | /  \  | |  /  \   
+%| |  | |/ /\ \ | | / /\ \  
+%| |__| / ____ \| |/ ____ \ 
+%|_____/_/    \_\_/_/    \_\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section {Data}
+
+
+%\section {Discussion}
+
+
+
+%\subsection{Definitions}
+% Include your sources!
+%%%%%%%%%%%%%%%%%%%%%%%
+% LIST OF DEFINITIONS
+% \begin{description}
+% \item [WORD] {Definition}
+% \end{description}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%\subsection{Results}
+% State your main discovery based on the experimental data.
+
+
+
+
+
+
+%\subsection{Questions}
+% Write full question and format answers in ITALIC
+% CTRL + I for ITALIC
+
+
+
+
+
+
+
+%\subsection{Critique}
+% Discuss precision of measurements and instruments.
+% Suggest improvements for future labs.
+
+
+
+
+
+
+
+%###############################################
+%  _____ ____  _   _  _____ _     _    _ _____  ______ 
+% / ____/ __ \| \ | |/ ____| |   | |  | |  __ \|  ____|
+%| |   | |  | |  \| | |    | |   | |  | | |  | | |__   
+%| |   | |  | | . ` | |    | |   | |  | | |  | |  __|  
+%| |___| |__| | |\  | |____| |___| |__| | |__| | |____ 
+% \_____\____/|_| \_|\_____|______\____/|_____/|______|
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Conclusion}
+%#######################################################
+
+
+
+%  _____  ____  _    _ _____   _____ ______  _____ 
+% / ____|/ __ \| |  | |  __ \ / ____|  ____|/ ____|
+%| (___ | |  | | |  | | |__) | |    | |__  | (___  
+% \___ \| |  | | |  | |  _  /| |    |  __|  \___ \ 
+% ____) | |__| | |__| | | \ \| |____| |____ ____) |
+%|_____/ \____/ \____/|_|  \_\\_____|______|_____/ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% USE NOCITE TO ADD SOURCES TO THE BIBLIOGRAPHY WITHOUT SPECIFICALLY CITING THEM IN THE DOCUMENT
+
+%\nocite{ref_num}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            % BIBLIOGRAPHY: %
+
+% Make sure your class *.bib file is uploaded to this project by clicking the project button > add files. Change 'sample' below to the name of your file without the .bib extension.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{plainnat}
+%\bibliography{sample}
+
+% UNCOMMENT THE TWO LINES ABOVE TO ENABLE BIBLIOGRAPHY
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}
