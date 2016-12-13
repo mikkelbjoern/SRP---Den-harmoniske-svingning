@@ -113,19 +113,19 @@ Da kan vi indsætte $h$ i den anden ligning og få:
 $h' + (2r_1 + b)h = 0$. 
 Dette er en differentialligning af første orden, som vi allerede har fundet en løsning på i sætning \ref{thm:y'=k*y}, 
 hvor vi i dette tilfælde har vi $k = -(2r_1 + b)$.
-Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)}$ hvor $K$ er et vilkårligt reelt tal. 
-Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)} + C$ hvor $C$ er integrationskonstanten. 
+Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)x}$ hvor $K$ er et vilkårligt reelt tal. 
+Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)x} + C$ hvor $C$ er integrationskonstanten. 
 Vi ser at $\frac{K}{2r_1 + b}$ er en konstant, som vi kan kalde $D$.
 Da ved jeg også at $f=u\cdot e^{r_1 x}$, jeg kan da ved at indsætte min fundne værdi af $u$, finde en form på $f$:
 \begin{align*}
 f 	&= ue^{r_1 x}\\
-	&= (D e^{-(2r_1 + b)} + C)e^{r_1 x} \\
-	&= D \cdot e^{-(2r_1 + b)+r_1} + C\cdot e^{r_1 x}\\
-	&= D \cdot e^{-r_1 - b} + C\cdot e^{r_1 x}\\
+	&= (D e^{-(2r_1 + b)x} + C)e^{r_1 x} \\
+	&= D \cdot e^{(-(2r_1 + b)+r_1)x} + C\cdot e^{r_1 x}\\
+	&= D \cdot e^{(-r_1 - b)x} + C\cdot e^{r_1 x}\\
 \end{align*}
 
 Fra start så vi dog sammenhængen at $r_1 + r_2 = -b$ og jeg kan derfor substituere $-b$ ind og få:
-$$f(x) = D \cdot e^{-r_1 +r_1 + r_2} + C\cdot e^{r_1 x}= D \cdot e^{r_2} + C\cdot e^{r_1 x}$$
+$$f(x) = D \cdot e^{(-r_1 +r_1 + r_2)x} + C\cdot e^{r_1 x}= D \cdot e^{r_2 x} + C\cdot e^{r_1 x}$$
 
-Og da er det netop vist at hvis $f$ er en løsning til differentialligningen, da er det også på formen $D \cdot e^{r_2} + C\cdot e^{r_1 x}$.
+Og da er det netop vist at hvis $f$ er en løsning til differentialligningen, da er det også på formen $D \cdot e^{r_2 x} + C\cdot e^{r_1 x}$.
 \end{proof}

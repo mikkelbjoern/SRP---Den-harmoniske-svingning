@@ -1,0 +1,28 @@
+\subsection{To komplekse rødder i karakterligningen}
+Jeg vil ikke føre fuldstændigt bevis for den fuldstændige løsning, når løsningerne til karakterligningen er komplekse. 
+Dette gør jeg ikke fordi at beviset minder meget om beviset for sætning \ref{thm: fuldstandig losning}.
+
+Man kunne formode ud fra sætning \ref{thm: fuldstandig losning}, at løsningerne ville være på formen $C\cdot e^{r_1 x} + D \cdot e^{r_2 x}$.
+Her bliver vi dog nødt til først at bemærke noget om $r_1$ og $r_2$.
+Vi ved at disse to er løsninger til den samme andengradsligning, og dermed må de også være komplekst konjugerede af hinanden\refKalkulus{133}. 
+Dermed må vi kunne skrive dem som $r_1 = a + bi$ og $r_2 = a-bi$. 
+Man kunne derfor tænke, at løsningen til den lineære andenordens differentialligning ville være på formen $C\cdot e^{(a+bi) x} + D \cdot e^{(a-bi)x}$.
+Dette kan vi dog skrive om med definition \ref{def: Den komplekse eksponentialfunktion} til $Ce^{ax}(\cos(bx) + \sin(bx) i) + De^{ax}(\cos(-bx) + \sin(-bx) i)$.
+Vi kan da flytte $e^{a}$ udenfor parentes og få 
+$e^{ax}(C(\cos(bx) + \sin(bx) i) + D(\cos(-bx) + \sin(-bx) i))$.
+Da det gælder om cosinus og sinus at $\cos(-x)=\cos(x)$ og $\sin(-x)=-\sin(x)$, kan vi videre omskrive til 4
+$e^{ax}(C(\cos(bx) + \sin(bx) i) + D(\cos(bx) - \sin(bx) i))$. 
+Dette kan ved brug af additionsformlen for sinus omskrives videre til $e^{ax}\cdot \sqrt{C^2 + D^2}\sin(bx+\phi)$. 
+Jeg vil ikke føre et argument for den sidste omskrivning.
+Dette skyldes at der kræves en forholdvist dybdegående forståelse for de trigonometriske funktioner for at kunne gennemføre argumentet. 
+Argumentet for omskrivningen kan ses i Kalkulus\refKalkulus{538-539}.
+
+Man kan argumentere for at mængden af alle funktioner på den før omtalte form er den fuldstændige løsning til den lineære andenordens homogene differentialligning når den har komplekse rødder i sin karakterligning. 
+Jeg vil dog udelade beviset, da det føres på næsten samme måde som beviset for sætning \ref{thm: fuldstandig losning}. 
+
+Jeg har altså den fuldstændige løsning til differentialligningen (når rødderne er komplekse) som:
+$y(x) = e^{ax}\sqrt{C^2 + D^2}\sin(bx+\phi)$, i fysiksammehænge sætter vi dog ofte $\sqrt{C^2 + D^2}$ til at være lig med en konstant $A$, da denne viser sig at være en amplitude. 
+Vi har derfor løsningerne på formen:
+$$y(x) = e^{ax}A\sin(bx+\phi)$$
+
+
