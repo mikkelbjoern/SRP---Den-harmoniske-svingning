@@ -21,12 +21,22 @@
   <GraphMatchNumSections>0</GraphMatchNumSections>
   <Stationery>0</Stationery>
   <CreationDateTime>30-11-2016 08:32:58</CreationDateTime>
-  <ModifiedDateTime>30-11-2016 09:10:56</ModifiedDateTime>
+  <ModifiedDateTime>13-12-2016 14:52:22</ModifiedDateTime>
   <PageBounds>0 0 15.9666666667 7.65</PageBounds>
   <ScreenResolution>0 0 1919 1079</ScreenResolution>
   <MathType>0</MathType>
   <AllowOptionsDialogs>1</AllowOptionsDialogs>
   <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <CustomCurveFit>A*sin(b*x+p)+c</CustomCurveFit>
+  <CustomCurveFitDescription>Harmonisk svingning</CustomCurveFitDescription>
+  <CustomCurveFit>-A*sin(b*x+p)+c</CustomCurveFit>
+  <CustomCurveFitDescription>Harmonisk svingning</CustomCurveFitDescription>
+  <CustomCurveFit>-A*sin(b*x+phi)+c</CustomCurveFit>
+  <CustomCurveFitDescription>Harmonisk svingning</CustomCurveFitDescription>
+  <CustomCurveFit>-A*sin(b*x+phi)+s0</CustomCurveFit>
+  <CustomCurveFitDescription>Harmonisk svingning</CustomCurveFitDescription>
+  <CustomCurveFit>A*sin(b*x+phi)+s0</CustomCurveFit>
+  <CustomCurveFitDescription>Harmonisk svingning</CustomCurveFitDescription>
   <ReplayWindowPosition>0 81 135 388 312 1</ReplayWindowPosition>
   <ReplayWindowSpeed>1</ReplayWindowSpeed>
   <ReplayWindowRepeat>0</ReplayWindowRepeat>
@@ -42,22 +52,22 @@
     <BroadcastTo>0 </BroadcastTo>
     <Visible>1</Visible>
     <PageTitle></PageTitle>
-    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0x1d</PageColor>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0xffffffff</PageColor>
     <PageDisplayPageInfo>0 </PageDisplayPageInfo>
     <PagePageInfo></PagePageInfo>
     <PageGraphPaper>0 </PageGraphPaper>
     <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
-    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0x1e</PageGraphPaperLineColor>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
     <PageReplayWindowPosition>0 81 135 388 312</PageReplayWindowPosition>
     <PageMeter>
       <ID>139 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <Bounds>0.006 6.31725 3.07476822917 7.634 </Bounds>
+      <Bounds>0.006 6.31725 3.07477 7.634 </Bounds>
       <SubordinateToID>0</SubordinateToID>
       <SubordinateOffset>0 0</SubordinateOffset>
       <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x29</BackgroundColor>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
       <AddNewData>0</AddNewData>
       <Locked>0</Locked>
       <AutoCreated>1</AutoCreated>
@@ -82,159 +92,15 @@
       <MeterAlarmValue>0</MeterAlarmValue>
       <MeterAlertSound>0</MeterAlertSound>
     </PageMeter>
-    <PageGraphCartesian>
-      <ID>138 </ID>
-      <BroadcastTo>1 119 </BroadcastTo>
-      <Visible>1</Visible>
-      <Bounds>3.10276822917 3.837 15.9546666667 7.638 </Bounds>
-      <SubordinateToID>0</SubordinateToID>
-      <SubordinateOffset>0 0</SubordinateOffset>
-      <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
-      <AddNewData>0</AddNewData>
-      <Locked>0</Locked>
-      <AutoCreated>1</AutoCreated>
-      <GraphLinkedIDs>1 119 </GraphLinkedIDs>
-      <YLinkedIDs>0 </YLinkedIDs>
-      <Font>
-        <Size> 12 </Size>
-        <Justification> 0 </Justification>
-        <VerticalJustification> 0 </VerticalJustification>
-        <Styles> 0 0 0 0 0 0 </Styles>
-        <Family> 3 </Family>
-        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
-        <Name>Arial</Name>
-        <Rotation>0</Rotation>
-      </Font>
-      <GraphTitle></GraphTitle>
-      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
-      <GraphShowPoints>0</GraphShowPoints>
-      <GraphInterpolate>0</GraphInterpolate>
-      <GraphShowTangent>0</GraphShowTangent>
-      <GraphShowLegend>0</GraphShowLegend>
-      <GraphShowCursorStatus>1</GraphShowCursorStatus>
-      <GraphShowCursorDelta>1</GraphShowCursorDelta>
-      <GraphPlotBaseColumnID>128 </GraphPlotBaseColumnID>
-      <GraphPlotTraceIDPairs>10 145 149 156 160 167 171 178 182 189 193 200 204 211 215 222 226 233 237 128 132 </GraphPlotTraceIDPairs>
-      <LogXAxis>0</LogXAxis>
-      <LogYAxis>0</LogYAxis>
-      <LogRightYAxis>0</LogRightYAxis>
-      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
-      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
-      <GraphConnectLines>1</GraphConnectLines>
-      <GraphBarGraph>0</GraphBarGraph>
-      <BinGraphStackColumns>0</BinGraphStackColumns>
-      <GraphShowPointProtectors>0</GraphShowPointProtectors>
-      <GraphMajorTickStyle>1</GraphMajorTickStyle>
-      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMajorTickColor>
-      <GraphMinorTickStyle>0</GraphMinorTickStyle>
-      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMinorTickColor>
-      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
-      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
-      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
-      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
-      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
-      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
-      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
-      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
-      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
-      <GraphPlotXMin>0</GraphPlotXMin>
-      <GraphPlotXMax>10</GraphPlotXMax>
-      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
-      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
-      <GraphPlotYMin>-0.9</GraphPlotYMin>
-      <GraphPlotYMax>1.3</GraphPlotYMax>
-      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
-      <GraphPlotDefaultXMax>10</GraphPlotDefaultXMax>
-      <GraphPlotDefaultYMin>-5</GraphPlotDefaultYMin>
-      <GraphPlotDefaultYMax>5</GraphPlotDefaultYMax>
-      <GraphPlotXLabel></GraphPlotXLabel>
-      <GraphPlotYLabel></GraphPlotYLabel>
-      <GraphDrawRainbow>0</GraphDrawRainbow>
-      <AudioTraceIDs>10 149 160 171 182 193 204 215 226 237 132 </AudioTraceIDs>
-      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
-    </PageGraphCartesian>
-    <PageGraphCartesian>
-      <ID>119 </ID>
-      <BroadcastTo>1 138 </BroadcastTo>
-      <Visible>1</Visible>
-      <Bounds>3.10276822917 0.012 15.9546666667 7.438 </Bounds>
-      <SubordinateToID>0</SubordinateToID>
-      <SubordinateOffset>0 0</SubordinateOffset>
-      <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
-      <AddNewData>0</AddNewData>
-      <Locked>0</Locked>
-      <AutoCreated>1</AutoCreated>
-      <GraphLinkedIDs>1 138 </GraphLinkedIDs>
-      <YLinkedIDs>0 </YLinkedIDs>
-      <Font>
-        <Size> 12 </Size>
-        <Justification> 0 </Justification>
-        <VerticalJustification> 0 </VerticalJustification>
-        <Styles> 0 0 0 0 0 0 </Styles>
-        <Family> 3 </Family>
-        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
-        <Name>Arial</Name>
-        <Rotation>0</Rotation>
-      </Font>
-      <GraphTitle></GraphTitle>
-      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
-      <GraphShowPoints>0</GraphShowPoints>
-      <GraphInterpolate>0</GraphInterpolate>
-      <GraphShowTangent>0</GraphShowTangent>
-      <GraphShowLegend>0</GraphShowLegend>
-      <GraphShowCursorStatus>1</GraphShowCursorStatus>
-      <GraphShowCursorDelta>1</GraphShowCursorDelta>
-      <GraphPlotBaseColumnID>128 </GraphPlotBaseColumnID>
-      <GraphPlotTraceIDPairs>10 145 147 156 158 167 169 178 180 189 191 200 202 211 213 222 224 233 235 128 130 </GraphPlotTraceIDPairs>
-      <LogXAxis>0</LogXAxis>
-      <LogYAxis>0</LogYAxis>
-      <LogRightYAxis>0</LogRightYAxis>
-      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
-      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
-      <GraphConnectLines>1</GraphConnectLines>
-      <GraphBarGraph>0</GraphBarGraph>
-      <BinGraphStackColumns>0</BinGraphStackColumns>
-      <GraphShowPointProtectors>0</GraphShowPointProtectors>
-      <GraphMajorTickStyle>1</GraphMajorTickStyle>
-      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMajorTickColor>
-      <GraphMinorTickStyle>0</GraphMinorTickStyle>
-      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMinorTickColor>
-      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
-      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
-      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
-      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
-      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
-      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
-      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
-      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
-      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
-      <GraphPlotXMin>0</GraphPlotXMin>
-      <GraphPlotXMax>10</GraphPlotXMax>
-      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
-      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
-      <GraphPlotYMin>0.17</GraphPlotYMin>
-      <GraphPlotYMax>0.4</GraphPlotYMax>
-      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
-      <GraphPlotDefaultXMax>60</GraphPlotDefaultXMax>
-      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
-      <GraphPlotDefaultYMax>2</GraphPlotDefaultYMax>
-      <GraphPlotXLabel></GraphPlotXLabel>
-      <GraphPlotYLabel></GraphPlotYLabel>
-      <GraphDrawRainbow>0</GraphDrawRainbow>
-      <AudioTraceIDs>10 147 158 169 180 191 202 213 224 235 130 </AudioTraceIDs>
-      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
-    </PageGraphCartesian>
     <PageTable>
       <ID>120 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <Bounds>0.009 0.009 3.08176822917 6.28225 </Bounds>
+      <Bounds>0.009 0.009 3.08177 6.28225 </Bounds>
       <SubordinateToID>0</SubordinateToID>
       <SubordinateOffset>0 0</SubordinateOffset>
       <BackgroundTransparent>0</BackgroundTransparent>
-      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0x2a</BackgroundColor>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0xffffffff</BackgroundColor>
       <AddNewData>1</AddNewData>
       <Locked>0</Locked>
       <AutoCreated>0</AutoCreated>
@@ -290,9 +156,122 @@
       <TableColumn> 235 0.8 </TableColumn>
       <TableColumn> 237 0.8 </TableColumn>
       <TableColumn> 240 0.8 </TableColumn>
-      <StartIndex> 0 </StartIndex>
+      <StartIndex> 53 </StartIndex>
       <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
     </PageTable>
+    <PageGraphCartesian>
+      <ID>119 </ID>
+      <BroadcastTo>1 340 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>3.10277 0.012 15.9547 7.438 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle></GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>233 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>2 233 235 233 341 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>10</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>0.24</GraphPlotYMin>
+      <GraphPlotYMax>0.35</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>10</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>0.23</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>0.36</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>2 235 341 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>340 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>12.35277 3.262 14.5371042773 4.3835390625 </Bounds>
+      <SubordinateToID>119</SubordinateToID>
+      <SubordinateOffset>9.25 3.25</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 9 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>0.025</GUIHelperRangeMin>
+      <GUIHelperRangeMax>10</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>235</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>233</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <GUIHelperUnderlyingHistogramFFTColumnID>0</GUIHelperUnderlyingHistogramFFTColumnID>
+      <CurveFitFunctionID>341</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>0.00146158389435</CurveFitError>
+      <CurveFitMethod>0</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>4 0.004544 0.7633 0.97 0.0297 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+    </PageHelperDataCurveFit>
   </Page>
   <CurrentPageIndex>0</CurrentPageIndex>
   <DataSet>
@@ -319,7 +298,7 @@
     </Metadata>
     <DataColumn>
       <ID>128 </ID>
-      <BroadcastTo>6 17 119 120 134 137 138 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 134 137 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -772,11 +751,11 @@
     </DataColumn>
     <DataColumn>
       <ID>130 </ID>
-      <BroadcastTo>8 4 17 119 120 134 137 138 139 </BroadcastTo>
+      <BroadcastTo>7 4 17 119 120 134 137 139 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>121</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -1224,11 +1203,11 @@
     </DataColumn>
     <DataColumn>
       <ID>132 </ID>
-      <BroadcastTo>4 4 17 120 138 </BroadcastTo>
+      <BroadcastTo>4 4 17 119 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>134</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -1278,7 +1257,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x6666 0x0 0x6666| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>137</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -1349,8 +1328,8 @@
       <ID>143 </ID>
       <BroadcastTo>1 119 </BroadcastTo>
       <Visible>1</Visible>
-      <DataObjectName>A*sin(B*t+C)+D</DataObjectName>
-      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectName>A*sin(B*x+C)+D</DataObjectName>
+      <DataObjectShortName>Sinus</DataObjectShortName>
       <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
@@ -1364,6 +1343,366 @@
       <FunctionModelType>16</FunctionModelType>
       <FunctionCoefficientArray>4 0.0431925719061 7.63249226465 0.748741805632 0.298425403794 </FunctionCoefficientArray>
       <FunctionCoefficientUncertaintyArray>4 8.73449689194e-005 0.000714737502806 0.00413462943817 6.21343816056e-005 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>268 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+p)+c</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+p)+c</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 -0.0885417017156 -7.72968858022 310.603845366 0.292886335614 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000220525262811 0.000884085061102 0.00509373996145 0.000156967496086 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>271 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+p)+c</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+p)+c</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.670409299704 7.72952030593 37189.0176166 1.30290770251e-005 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.00209902721626 0.00105997934993 0.00615904913866 0.00147515835537 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>280 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+p)+c</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+p)+c</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.08854 7.73 3.555 0.2929 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000220525262811 0.000884085061102 0.00509373996145 0.000156967496086 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>283 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>-A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>-A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.0885417017156 7.72968858022 584.750060907 0.292886335614 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000220525262811 0.000884085061102 0.00509373996145 0.000156967496086 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>286 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.04319 7.632 6.99 0.2984 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 8.73449689194e-005 0.000714737502806 0.00413462943817 6.21343816055e-005 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>289 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.06744 7.669 20.9 0.2963 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000123667691484 0.000623292817399 0.0036084894036 8.7055013493e-005 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>317 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.07559 7.692 3 0.2948 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000144857028694 0.000681153273975 0.00392660566962 0.000103164834763 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>320 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.07559 7.692 38.58 0.2948 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000144857028695 0.000681153273982 0.00392660566966 0.000103164834764 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>323 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.081 7.707 -1.786 0.2933 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000206232340529 0.000883802848906 0.00511788467123 0.000145975763085 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>326 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.08944 7.734 -1.145 0.2936 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000230301270553 0.000870988651288 0.00505455770802 0.000161925232651 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>329 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.08174 -7.709 -50.63 0.294 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000209835102011 0.000910017910297 0.00524397008608 0.000149327640581 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>332 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.08174 7.709 3.4674 0.294 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000209835102011 0.000910017910297 0.00524397008608 0.000149327640581 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>335 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.06552 7.663 818.2 0.2954 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000126338467582 0.000676651973422 0.00389710028472 8.96898521234e-005 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>338 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.05712 7.648 9.939 0.2965 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.000111556027728 0.000688117203877 0.0039837034215 7.9286304673e-005 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
+      <FunctionModelParameterNames></FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>341 </ID>
+      <BroadcastTo>1 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*sin(b*x+phi)+s0</DataObjectName>
+      <DataObjectShortName>Tilpas</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelDegree>1</FunctionModelDegree>
+      <FunctionModelString>A*sin(b*x+phi)+s0</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>4 0.04544 7.633 9.7 0.297 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>4 0.00010095945417 0.00077160203995 0.00448598553631 7.14829651177e-005 </FunctionCoefficientUncertaintyArray>
       <FunctionModelInvalidDataFlags>0</FunctionModelInvalidDataFlags>
       <FunctionModelParameterNames></FunctionModelParameterNames>
       <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
@@ -1394,7 +1733,7 @@
     </Metadata>
     <DataColumn>
       <ID>145 </ID>
-      <BroadcastTo>6 17 119 120 138 151 154 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 151 154 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -1851,7 +2190,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -2299,11 +2638,11 @@
     </DataColumn>
     <DataColumn>
       <ID>149 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>151</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -2353,7 +2692,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>154</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -2422,7 +2761,7 @@
     </Metadata>
     <DataColumn>
       <ID>156 </ID>
-      <BroadcastTo>6 17 119 120 138 162 165 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 162 165 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -2879,7 +3218,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -3327,11 +3666,11 @@
     </DataColumn>
     <DataColumn>
       <ID>160 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>162</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -3381,7 +3720,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>165</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -3450,7 +3789,7 @@
     </Metadata>
     <DataColumn>
       <ID>167 </ID>
-      <BroadcastTo>6 17 119 120 138 173 176 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 173 176 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -3907,7 +4246,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -4355,11 +4694,11 @@
     </DataColumn>
     <DataColumn>
       <ID>171 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>173</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -4409,7 +4748,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>176</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -4478,7 +4817,7 @@
     </Metadata>
     <DataColumn>
       <ID>178 </ID>
-      <BroadcastTo>6 17 119 120 138 184 187 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 184 187 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -4935,7 +5274,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -5383,11 +5722,11 @@
     </DataColumn>
     <DataColumn>
       <ID>182 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>184</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -5437,7 +5776,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>187</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -5506,7 +5845,7 @@
     </Metadata>
     <DataColumn>
       <ID>189 </ID>
-      <BroadcastTo>6 17 119 120 138 195 198 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 195 198 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -5963,7 +6302,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -6411,11 +6750,11 @@
     </DataColumn>
     <DataColumn>
       <ID>193 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>195</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -6465,7 +6804,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xcccc 0x0 0xffff| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>198</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -6534,7 +6873,7 @@
     </Metadata>
     <DataColumn>
       <ID>200 </ID>
-      <BroadcastTo>6 17 119 120 138 206 209 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 206 209 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -6991,7 +7330,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -7439,11 +7778,11 @@
     </DataColumn>
     <DataColumn>
       <ID>204 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>206</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -7493,7 +7832,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>209</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -7562,7 +7901,7 @@
     </Metadata>
     <DataColumn>
       <ID>211 </ID>
-      <BroadcastTo>6 17 119 120 138 217 220 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 217 220 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -8019,7 +8358,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -8467,11 +8806,11 @@
     </DataColumn>
     <DataColumn>
       <ID>215 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>217</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -8521,7 +8860,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x2f2f 0x4f4f 0x2f2f| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>220</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -8590,7 +8929,7 @@
     </Metadata>
     <DataColumn>
       <ID>222 </ID>
-      <BroadcastTo>6 17 119 120 138 228 231 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 228 231 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -9047,7 +9386,7 @@
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -9495,11 +9834,11 @@
     </DataColumn>
     <DataColumn>
       <ID>226 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>228</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -9549,7 +9888,7 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0x0 0x0 0x9999| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>231</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -9596,7 +9935,7 @@
   </DataSet>
   <DataSet>
     <ID>232 </ID>
-    <BroadcastTo>3 120 239 242 </BroadcastTo>
+    <BroadcastTo>3 120 239 263 </BroadcastTo>
     <Visible>1</Visible>
     <DataSetName>Kør 9</DataSetName>
     <DataSetComments></DataSetComments>
@@ -9618,7 +9957,7 @@
     </Metadata>
     <DataColumn>
       <ID>233 </ID>
-      <BroadcastTo>6 17 119 120 138 239 242 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 239 263 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Tid</DataObjectName>
       <DataObjectShortName>t</DataObjectShortName>
@@ -10071,11 +10410,11 @@
     </DataColumn>
     <DataColumn>
       <ID>235 </ID>
-      <BroadcastTo>5 17 119 120 239 242 </BroadcastTo>
+      <BroadcastTo>5 17 119 120 239 263 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Position</DataObjectName>
       <DataObjectShortName>x</DataObjectShortName>
-      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>0</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -10523,11 +10862,11 @@
     </DataColumn>
     <DataColumn>
       <ID>237 </ID>
-      <BroadcastTo>3 17 120 138 </BroadcastTo>
+      <BroadcastTo>2 17 120 </BroadcastTo>
       <Visible>1</Visible>
       <DataObjectName>Hastighed</DataObjectName>
       <DataObjectShortName>v</DataObjectShortName>
-      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0xffffffff</DataObjectColor>
       <DataObjectDataSource>239</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
@@ -10577,8 +10916,8 @@
       <Visible>1</Visible>
       <DataObjectName>Acceleration</DataObjectName>
       <DataObjectShortName>acc</DataObjectShortName>
-      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0x0</DataObjectColor>
-      <DataObjectDataSource>242</DataObjectDataSource>
+      <DataObjectColor>0xcdcd 0x6666 0x0| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>263</DataObjectDataSource>
       <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
       <DataObjectPrecision>3</DataObjectPrecision>
       <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
@@ -10630,7 +10969,7 @@
       <ID>121 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
-      <MBLPortRef>&#60;PortRef PortType="2" Location="\\?\hid#vid_08f7&#38;pid_0004#6&#38;1af463d7&#38;0&#38;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" DisplayName="\\?\hid#vid_08f7&#38;pid_0004#6&#38;1af463d7&#38;0&#38;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" /&#62;</MBLPortRef>
+      <MBLPortRef>&#60;PortRef PortType="-1" Location="\\?\hid#vid_08f7&#38;pid_0004#6&#38;1af463d7&#38;0&#38;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" DisplayName="\\?\hid#vid_08f7&#38;pid_0004#6&#38;1af463d7&#38;0&#38;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" /&#62;</MBLPortRef>
       <MBLAnalogOutWaveForm>0</MBLAnalogOutWaveForm>
       <MBLAnalogOutFrequency>1</MBLAnalogOutFrequency>
       <MBLAnalogOutAmplitude>2</MBLAnalogOutAmplitude>
@@ -10809,7 +11148,7 @@
       <CalcEquationEditable>1</CalcEquationEditable>
     </CalcColumnSource2>
     <CalcColumnSource2>
-      <ID>242 </ID>
+      <ID>263 </ID>
       <BroadcastTo>0 </BroadcastTo>
       <Visible>1</Visible>
       <CalcEquation>secondDerivative("Position", "Tid")</CalcEquation>
@@ -10947,9 +11286,9 @@ Acceleration</MBLChannelMatch2>
       <GoogleMapsOpenAnnotations>0</GoogleMapsOpenAnnotations>
       <GoogleMapsDrawLine>0</GoogleMapsDrawLine>
       <GoogleMapsDrawLineSingleColor>0</GoogleMapsDrawLineSingleColor>
-      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x0</GoogleMapsingleColor>
-      <GoogleMapsDrawLineColumnID>2576980378</GoogleMapsDrawLineColumnID>
-      <GoogleMapsDrawLineAutoScale>217</GoogleMapsDrawLineAutoScale>
+      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x2e</GoogleMapsingleColor>
+      <GoogleMapsDrawLineColumnID>0</GoogleMapsDrawLineColumnID>
+      <GoogleMapsDrawLineAutoScale>0</GoogleMapsDrawLineAutoScale>
       <GoogleMapsDrawLineSmooth>1</GoogleMapsDrawLineSmooth>
       <GoogleMapsDrawLineMin>0</GoogleMapsDrawLineMin>
       <GoogleMapsDrawLineMax>0</GoogleMapsDrawLineMax>
