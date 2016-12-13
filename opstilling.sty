@@ -14,3 +14,19 @@
 
 \end{tikzpicture}
 }
+
+\newcommand{\opstillingEt}[1]{
+%#1: Strukket længde. Denne værdi må højest være 2 (dette flytter loddet opad) og bør lavest være -2 da loddet ellers er længere end foden).
+\begin{tikzpicture}
+\tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.2cm,post length=0.2cm,segment length=2.5-#1}]
+\tikzstyle{ground}=[fill,pattern=north east lines,draw=none,minimum width=0.75cm,minimum height=0.3cm]
+
+
+\draw[spring] (0,5) -- (0,3+#1);
+\draw[thick] (0,5) -- (1,5) -- (1,0); %stativ
+\draw[thick] (0.8,0)--(1.2,0); %Stativfod
+\draw (-0.25,3+#1) -- (0.25,3+#1) -- (0.25,2+#1) -- (-0.25,2+#1) -- (-0.25,3+#1);
+\draw[fill = gray] (-0.6,0)--(0.4,0)--(0.4,0.2)-- (0.2,0.2)-- (0.2,0.3)--(-0.2,0.3) --(-0.2,0.2)  --(-0.6,0.2)--(-0.6,0); %Ultralydsensor
+
+\end{tikzpicture}
+}
