@@ -80,6 +80,14 @@ Lod & $32.45$ \\
 \end{table}
 
 \subsection{Databehandling}
+\subsubsection{Fjederkonstant}\label{databehandling: tyk fjeder fjederkonstant}
+For at finde en fjederkonstant for fjederen der bliver brugt til forøget, har jeg taget de sammenhørende værdier af fjederkraft og udstrækning og plottet dem i kraft som afhængig og udstrækning som uafhængig variabel. 
+Derefter har jeg lavet en best-fit lineær sammenhæng. 
+Denne havde en forholdsvist lav RMSE på $0.044N$, og derfor virker dataen pålidelig. 
+Vi må da have fjederkonstanten som hældningen på dette plot, i dette tilfælde $3.6\frac{N}{m}$.
+
+Den tilhørende graf samt best-fit plot kan ses i bilaget "Forsøg 1 - grafer.pdf". 
+ 
 
 \subsubsection{Best-fit kurver}
 For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
@@ -105,7 +113,7 @@ I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac
 \textbf{Forsøg 9}  & 0,04544    & 7,633                         & 9,7             & 0,297          & 0,001462      \\ \hline
 \end{tabular}
 
-\caption{De forskellige værdier på best-fit kurver}
+\caption{De forskellige værdier på best-fit kurver. De tilhørende grafer til dataen samt best-fit-plot er vedlagt som bilag i filen ''Forsøg 1 - grafer.pdf''}
 \label{tabel: bestfitkurver forsog 1}
 \end{table}
 
@@ -113,6 +121,8 @@ I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac
 Det første der er værd at bemærke, er at værdierne af $\sqrt{\frac{k}{m}}$ ligger meget tæt på hinanden. 
 Dette stemmer godt overens med teorien da denne værdi ikke bør være afhængig af hvor meget der energi der bliver tilførst systemet til at starte med, men kun hvilken masse lodet har og hvilken fjederkonstant fjederen har. 
 Da forsøget er lavet med samme fjeder og samme lod, må man forvente samme værdi, hvilket også er det vi observerer, da der kun er en forskel på $7.734s^{-1}-7.632s^{-1}=0.102s^{-1}$ på den største og mindste værdi, hvilket er relativt lidt i forhold til de ca. 7 en halv tallene ligger på.
+
+
 
 Derudover er det værd at bemærke de meget lave afvigelser. 
 Den gennemsnitlige afvigelse ligger imellem $0.3136cm$ og $0.4427cm$ i forhold til amplituder på helt op til $8.944cm$. 
