@@ -6,7 +6,9 @@ Kapitel 2 - "Gør matematisk rede for løsningsmetoder til lineære andenordens dif
 
 Ved referencer bruges titler på følgende måder:
 
-  - teori:*	; refererer til et teoriafsnit om et givent emne: *
-  - fig:*	; refererer til en figur der indeholder *
-  - def:*	; refererer til en definition omkring *
-  - thm:*	; Et matematisk teorem om *
+  - teori:*		; refererer til et teoriafsnit om et givent emne: *
+  - fig:*		; refererer til en figur der indeholder *
+  - def:*		; refererer til en definition omkring *
+  - thm:*		; Et matematisk teorem om *
+  - expN:*		; refererer til del * af eksperiment N
+  - databehandling:* 	; Databehandling af *
