@@ -34,11 +34,50 @@ Dataen er præsenteret på præcis samme måde som i forsøg 1, se derfor afsnit
 
 
 \subsection{Databehandling}
+\subsubsection{Bestemmelse af fjederkonstant}
+Da fjederen er den samme som i forsøg 1, er fjederkonstanten bestemt på samme måde som i afsnit \ref{exp1: databehandling afsnit}, og er derfor $3.6\frac{N}{m}$.
+
 For at tjekke om dataen rent faktisk opfører sig som opfører sig som forventet, vil jeg forsøge at lave best-fit kurver på formen:
 $$e^a \cdot A \cdot \sin (bx+\phi)+s_0$$
 Her står $a$ i stedet for konstanten $-\frac{\mu}{2m}$ og $b$ i stedet for 
 $\frac{\sqrt{-\frac{\mu^2}{m^2}+4\frac{k}{m}}}{2}$.
-Desuden er $s_0$ lagt til for at tage højde for at loddet hænger et stykke over sensoren.
+Desuden er $s_0$ lagt til for at tage højde for, at loddet hænger et stykke over sensoren.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{\textbf{$a(s^{-1})$}} & \multicolumn{1}{c|}{\textbf{$A(m)$}} & \multicolumn{1}{c|}{\textbf{$b(s^{-1})$}} & \multicolumn{1}{c|}{\textbf{$\phi$}} & \multicolumn{1}{c|}{\textbf{$s_0(m)$}} & \multicolumn{1}{c|}{\textbf{RMSE$(m)$}} \\ \hline
+\textbf{Forsøg A}      & -0,05858                          & 0,05713                           & 7,379                             & 30,21                                & 0,2955                              & 0,0009385                          \\ \hline
+\textbf{Forsøg B}      & -0,06614                          & 0,06734                           & 7,384                             & 2,985                                & 0,2952                              & 0,003745                           \\ \hline
+\textbf{Forsøg C}      & -0,08001                          & 0,09877                           & 7,395                             & 35,1                                 & 0,2949                              & 0,004438                           \\ \hline
+\textbf{Forsøg D}      & -0,06506                          & 0,06517                           & 7,377                             & 7,275                                & 0,2958                              & 0,0009644                          \\ \hline
+\textbf{Forsøg E}      & -0,06358                          & 0,06068                           & 7,385                             & 6,25                                 & 0,2959                              & 0,0007398                          \\ \hline
+\end{tabular}
+\caption{Konstanter fra best-fit-kurver til forsøg 2. De tilhørende grafer er vedlagt som bilag i filen ''Forsøg 2 - grafer.pdf''.}
+\end{table}
+
+\subsubsection{Vurdering af data}
+
+Som udgangspunkt ser det meget godt ud med de meget lave værdier af RMSE. 
+Dog kan man se et problem hvis man kigger på grafen.
+Det ser ud til at der ikke kan findes en passende værdi af $a$, således at best-fit kurven passer på kurven hele vejen igennem. 
+Dette kan ses meget tydeligt ved at kigge på den sidste del af grafen, hvor best-fit-kurven er mindre end den målte data.
+der kan ses et eksempel på dette på figur \ref{fig: Fejlkurve exp2}.
+
+\begin{figure}[h]
+\center
+\includegraphics[scale=0.5]{Figurer/Kurvefejl}
+\caption{Indzoomet udklik af de sidste ca. $4.5$ sekunder af forsøg E. Det ses her tydeligt at dataen (rød) har et markant større udsving end best-fit-kurven (sort).}
+\label{fig: Fejlkurve exp2}
+\end{figure}
+
+Grunden til den forskel som ses på figur \ref{fig: Fejlkurve exp2}, er formentlig af vores model for vindmodstanden ikke er helt god nok. 
+Med den teori vi har om vindmodstand fra afsnit \ref{teori:vindmodstand}, vil det være et logisk gæt at sige at vi skal have en anden eksponent på vindmodstanden end 1. 
+Dette vil kan man forsøge på ved at lave en numerisk løsning til differentialligningen. 
+
+
+
 
 
 \subsection{Konklusion}
