@@ -1,0 +1,13 @@
+God model:
+m*diff(diff(f(x),x),x)+b*abs(diff(f(x),x))*diff(f(x),x)^n/diff(f(x),x)+k*f(x) = 0
+
+
+Pleb model:
+m*diff(diff(g(x),x),x)+b*diff(g(x),x)+k*g(x) = 0
+
+
+
+b = 2
+k = 3.6
+m = 50
+n = 2
