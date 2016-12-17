@@ -1,0 +1,49 @@
+
+\section{Nødvendig matematisk baggrundsteori}
+\subsection{Differentialligninger}
+\newcommand{\LosEks}{$ \{ c\cdot e^{kx}|c\in \mR \} $}%Bruges i sætningen
+Ved en differentialligning forstår vi en funktionnalligning hvor en funktionen minimum et sted er differentieret en gang.
+En funktionalligning er en ligning hvor det er en funktion der er den ubekendte. 
+Med en løsning til en differentialligning refererer jeg fremover til en funktion der gør differentialligningen sand. 
+Ved den fuldstændige løsning til en differentialligning, refererer jeg fremover til mængden af \emph{alle} løsninger til differentialligningen. 
+Nedenfor er et eksempel på en differentialligning. 
+Denne er taget med både som eksempel og for at gøre udregninger mere tilgængelige senere.
+
+\begin{thm}\label{thm:y'=k*y}
+Lad $y$ være en differentialbel funktion og $k\in \mR$. Da har  differentialligningen $y' = ky$ den fuldstændige løsning \LosEks.
+\end{thm}
+\begin{proof}
+Først vil jeg vise at alle funktioner i den påståede fuldstændige løsning er løsninger til differentialligningen.
+Antag af $g$ er en løsning og derfor ligger i \LosEks .
+Da er $g=c\cdot e^{kx}$ for et eller andet reelt tal $c$.
+Jeg indsætter da løsningen i ligningen: 
+
+\begin{align*}
+y' &= ky\\
+g' &= kg\\
+(c\cdot e^{kx})' &= k\cdot c\cdot e^{kx}\\
+k\cdot c\cdot e^{kx} &= k\cdot c\cdot e^{kx}\\
+\end{align*}
+Jeg ser da at de to sider er lig hinanden og dermed at $g$ er en løsning. 
+
+Nu vil jeg vise at hvis en funktion $h$ er en løsning til differentialligninger, da vil $h$ ligge i \LosEks.
+Antag da netop at $h$ er en løsning til differentialligningen. 
+Dermed ved vi at $h'=k\cdot h$.
+Jeg vil nu lave omskrivninger på denne ligning. 
+For at gøre disse omskrivninger nemmere vil jeg definere en funktion $s=e^{-kx}$, som vi ved at differentiere indser opfylder at $s'=k \cdot e^{-kx} = -ks$.
+Ved omskrivning ses da:
+\begin{align*}
+h'&=k\cdot h \\
+h'-kh &= 0\\
+h's-ksh&=0 		& \text{(Ganger med }s\text{)}\\
+h's+s'h&=0		& \text{(Ses ved den før omtalte egenskab for $s$)}\\
+(hs)'&=0		&\text{(Ses ved kædereglen)}\\
+hs+c_1 &= 0		&\text{(Ses ved at integrere, $c_1$ er integrationskonstant)}\\
+h&= -c_1 \cdot \frac{1}{s}\\
+h&= -c_1 \cdot e^{kx} &\text{(Ses ved $\frac{1}{s}=\frac{1}{e^{-kx}} = e^{kx}$)}
+\end{align*}
+Da ser vi at $h$ må være på formen en konstant ganget med $e^{kx}$, hvilet netop karakteriserer elementer i \LosEks. 
+Dermed ligger $h$ i \LosEks.
+Da er vist at hvis en funktion er en løsning til differentialligningen er ligger det også i \LosEks og det er også vist at hvis et element ligger i \LosEks da er det også en løsning. 
+Dermed er \LosEks den fuldstændige løsning til differentialligningen. 
+\end{proof}
