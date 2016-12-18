@@ -14,29 +14,29 @@ På figur \ref{fig:Basis Forsogsopsaetning} ses en skitse af forsøgets opsætni
 
 \subsection{Teoretiske egenskaber for bevægelsen}
 Man kan da overveje, hvilke kræfter der påvirker loddet. 
-Det er klart at loddet er påvirket af en tyngdekraft. 
-Derudover er loddet påvirket af kraften fra fjederen.
-Til sidst vil loddets bevægelse også være påvirket af luften omkring den hvis loddet er sat i bevægelse. 
-Jeg vil starte med at kigge på, hvordan loddet vil opføre sig hvis man ser på en forholdsvist langsom bevægelse i en kortere tidsperiode.
+Det er klart, at loddet er påvirket af en tyngdekraft. 
+Derudover, er loddet påvirket af kraften fra fjederen.
+Til sidst vil loddets bevægelse også være påvirket af luften omkring den, hvis loddet er sat i bevægelse. 
+Jeg vil starte med, at kigge på, hvordan loddet vil opføre sig, hvis man ser på en forholdsvist langsom bevægelse i en kortere tidsperiode.
 Da kan vi nemlig se bort fra luftens dæmpning. 
 
 \subsubsection{Differentialligning uden dæmpning}\label{teori: Opstilling ligning uden dampning}
 Hvis vi betragter nedadgående retning som værende positiv retning, kan vi altså opskrive den resulterende kraft på loddet som $F_{res} = -F_{fjeder}+F_{t}$, hvor $F_t$ betegner tyngdekraften på loddet. 
 Vi bemærker dog at $F_t$ ikke er afhængig af af loddets stedfunktion. 
 Dette gør den mere besværlig at arbejde med. 
-Vi vil derfor sætte vores nulpunkt for kræfterne på en sådan måde at tyngdekraften bliver udlignet af at fjederen bliver strukket ud. 
+Vi vil derfor sætte vores nulpunkt for kræfterne på en sådan måde, at tyngdekraften bliver udlignet af at fjederen bliver strukket ud. 
 Således har vi altså i stedet for $F_{res}=-F_{fjeder}$ eller $F_{res}+F_{fjeder}=0$.
 Men vi kan da omskrive til en differentialligning ved at udnytte at $F_{fjeder}=k \cdot x(t)$ (se \ref{teori:Hooks lov}) hvor $x(t)$ er en funktion der beskriver loddets højde i forhold til et udgangspunkt (typisk vil dette udgangspunkt være den højde vil være i når det hænger stille).  
-Derudover ved vi fra Newtons anden lov (se \ref{teori:Newtons anden lov}) at $F_{res}=m\cdot a(t) = m \cdot x''(t)$ 
-(her er udnyttes at accelerationen af et objekt er lig dets stedfunktion differentieret dobbelt\refFysA{187}). 
-Dermed får vi altså ligningen :
+Derudover ved vi fra Newtons anden lov (se \ref{teori:Newtons anden lov}), at $F_{res}=m\cdot a(t) = m \cdot x''(t)$ 
+(her udnyttes at accelerationen af et objekt er lig dets stedfunktion differentieret dobbelt\refFysA{187}). 
+Dermed får vi ligningen :
 $$m\cdot x''(t)+k\cdot x(t)=0$$ 
 som vi ser er en differentialligning i $x(t)$.
 
 \subsubsection{Differentialligning med dæmpning}\label{teori: Opstilling af ligning med dampning}
-Vi kan på samme måde som i forrige afsnit opskrive et udtryk der beskriver den resulterende kraft på loddet. 
+Vi kan på samme måde som i forrige afsnit opskrive et udtryk, der beskriver den resulterende kraft på loddet. 
 Denne gang skal der bare trækkes et led mere fra på højresiden - nemlig luftmodstanden. 
-Da vi i de fleste bevægelse tilnærmelsesvist kan beskrive luftmodstanden som værende proportional med hastigheden, kan vi skrive den som $- \mu x'(t)$ hvor $\mu$ er en proportionalitetskonstant og $x'(t)$ er stedfunktionen differentieret (og altså en beskrivelse af farten til tiden $t$\refFysA{187}).
+Da vi i de fleste bevægelser med lav fart tilnærmelsesvist kan beskrive luftmodstanden som værende proportional med hastigheden(se \ref{teori:vindmodstand}), kan vi skrive den som $- \mu x'(t)$ hvor $\mu$ er en proportionalitetskonstant, og $x'(t)$ er stedfunktionen differentieret (og altså en beskrivelse af farten til tiden $t$\refFysA{187}).
 her får vi altså en differentialligning på formen $m\cdot x''(t)=-k\cdot x(t)-\mu x'(t)$ eller omskrevet:
 $$m\cdot x''(t)+\mu x'(t)+k\cdot x(t)=0$$
-Fremover til $\mu x(t)$ blive omtalt som \textit{dæmpningsledet}, da det netop er luftmodstanden der gør at bevægelsen ikke bliver ved for evigt, da den giver anledning til en dæmpning. 
+Fremover vil $\mu x(t)$ blive omtalt som \textit{dæmpningsledet}, da det netop er luftmodstanden der gør, at bevægelsen ikke bliver ved for evigt, da den giver anledning til en dæmpning. 
