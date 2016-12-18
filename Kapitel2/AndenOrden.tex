@@ -74,7 +74,7 @@ Derefter kan vi bruge sætning \ref{thm: Summen af to losninger er en losning} t
 Dermed må $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ være en løsning til differentialligningen. 
 \end{proof}
 
-\begin{thm}[Den fuldstændige løsning til den lineære andenordens differentialligning]\label{thm: fuldstandig losning}
+\begin{thm}[Den fuldstændige løsning]\label{thm: fuldstandig losning}
 Den fuldstændige løsning til differentialligningen $y'' + by' + cy = 0$, med en karakterligning med to reelle løsninger $r_1$ og $r_2$ er mængden af alle funktioner på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ hvor $C,D$ er vilkårlige reelle konstanter.
 \end{thm}
 \begin{proof}
@@ -102,11 +102,12 @@ Da jeg ved at $f$ er en løsning til differentialligningen, kan jeg opskrive dif
 	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x})\\
 	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}\\
 	&= u r_1^2 e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x} + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x}  & \text{(Rokerer rundt på led)}\\
-	&= ue^{r_1 x}(r_1^2  + br_1 + c) + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{(Rykker $ue^{r_1 x}$ udenfor  parantes)}\\
-	&= ue^{r_1 x} \cdot 0+ u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($r_1$ er løsning til karakterligningen)}\\
+	&= ue^{r_1 x}(r_1^2  + br_1 + c) + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($ue^{r_1 x}$ udenfor  parantes)}\\
+	&= ue^{r_1 x} \cdot 0+ u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($r_1$ løser karakterligningen\footnotemark)}\\
 	&= e^{r_1 x} (u'' + (2r_1 + b)u') & \text{(Sætter udenfor parantes)}\\
 	&= u'' + (2r_1 + b)u' & \text{(Dividerer med $e^{r_1 x}$)}
 \end{align*}
+\footnotetext{$r_1$ er defineret til at være en løsning til karakterligningen, og derfor er $r_1^2 + br^1 + c = 0$}
 Vi har da ligningen $u'' + (2r_1 + b)u' = 0$. 
 Lad da en ny hjælpefunktion $h$ være defineret som $h = u'$. 
 Da kan vi indsætte $h$ i den anden ligning og få:
