@@ -1,9 +1,22 @@
-\documentclass[11pt,a4paper,openany]{book}
+\documentclass[11pt,a4paper,openany,oneside]{book}
 \usepackage{preamble}
 \usepackage{opstilling}
 \usepackage{referencekommandoer}
 
 \author{Mikkel B. Goldschmidt \\ 3r, Nørre Gymnasium \\ SRP i matematik og fysik}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark \\ \rightmark}
+\cfoot{\thepage}
+\lfoot{Mikkel B. Goldschmidt}
+\rfoot{3r, Nørre Gymnasium}
+
+
+
+
 \title{Dæmpede svingninger og differentialligninger}
 \begin{document}
 \maketitle
@@ -29,9 +42,6 @@
 \input{Kapitel3/Introduktion}
 \input{Kapitel3/Eksperiment1}
 \input{Kapitel3/Eksperiment2}
-\input{Kapitel3/Konklusion}
-
-\input{Sammenfatning}
 
 \input{Sammenfatning}
 
