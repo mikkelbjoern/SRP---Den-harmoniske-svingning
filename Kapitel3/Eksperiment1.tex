@@ -1,4 +1,4 @@
-\section{Forsøg: Svingning af lod i luft i kort tid}\label{exp1: Forsog 1 - hele afsnittet}
+\section{Forsøg 1: Svingning af lod i luft i kort tid}\label{exp1: Forsog 1 - hele afsnittet}
 
 \subsection{Forsøgsbeskrivelse}\label{exp1: Beskrivelse af experiment}
 \subsubsection{Materialer}
@@ -13,7 +13,7 @@
 Disse materialer blev brugt til forsøget:
 \begin{itemize}
 	\setlength\itemsep{-1em}
-	\item Lod
+	\item Lod - ca. $30g$
 	\item Fjeder
 	\item Kraftmåler
 	\item Tavlelineal ($1$ meter)
@@ -22,7 +22,7 @@ Disse materialer blev brugt til forsøget:
 	\item Computer til opsamling af data
 \end{itemize}
 
-\subsubsection{Udførelse}\label{exp1: Udforelse}
+\subsubsection{Udførelsen}\label{exp1: Udforelse}
 
 
 
@@ -35,7 +35,7 @@ Jeg gentog dette forsøg 10 gange.
 
 
 \subsection{Hypotese}\label{exp1: Hypotese}
-Da dette forsøg forløber over forholdsvist kort tid, forventer jeg at man betragte denne bevægelse som om den ikke er dæmpet, da dæmpningsledet vil være forholdvist småt og vil virke i kort tid. 
+Da dette forsøg forløber over forholdsvist kort tid, forventer jeg at man kan betragte denne bevægelse som om den ikke er dæmpet, da dæmpningsledet vil være forholdvist småt og vil virke i kort tid. 
 Dermed forventes differentialligningen 
 $$m\cdot x'' = -k \cdot x$$
 at være opfyldt, jvf. afsnit \ref{teori: Opstilling ligning uden dampning}.
@@ -86,16 +86,16 @@ Lod & $32.45$ \\
 
 \subsection{Databehandling}\label{exp1: databehandling afsnit}
 \subsubsection{Fjederkonstant}\label{databehandling: tyk fjeder fjederkonstant}
-For at finde en fjederkonstant for fjederen der bliver brugt til forøget, har jeg taget de sammenhørende værdier af fjederkraft og udstrækning og plottet dem med kraft som afhængig og udstrækning som uafhængig variabel. 
+For at bestemme fjederkonstanten for fjederen der bliver brugt til forøget, har jeg taget de sammenhørende værdier af fjederkraft og udstrækning og plottet dem med kraft som afhængig og udstrækning som uafhængig variabel. 
 Derefter har jeg lavet en best-fit lineær sammenhæng. 
-Denne havde en forholdsvist lav RMSE på $0.044N$, og derfor virker dataen pålidelig. 
+Denne har en forholdsvist lav RMSE på $0.044N$, og derfor virker dataen pålidelig. 
 Vi må da have fjederkonstanten som hældningen på dette plot, i dette tilfælde $3.6\frac{N}{m}$.
 
 Den tilhørende graf samt best-fit plot kan ses i bilaget "Forsøg 1 - grafer.pdf". 
  
 
 \subsubsection{Best-fit kurver}\label{exp1: Best-fit kurver}
-For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
+For at tjekke hvor godt hypotesen holder, har jeg fået min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
 Det tilføjede $s_0$ for enden skyldes, at loddet har hængt en afstand over ultralydsensoren, som der skal justeres for. 
 
 I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac{k}{m}}, \phi ,s_0$ og så den gennemsnitlige afvigelse målt i meter (RMSE).
@@ -123,13 +123,13 @@ I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac
 \end{table}
 
 \subsubsection{Sammenligning af værdier af $\sqrt{\frac{k}{m}}$}\label{exp1: teoretisk bestemmelse af sqrt k over m}
-For at tjekke om konstanter tager de forventede værdier, vil jeg lave en sammenligning af værdien for $\sqrt{\frac{k}{m}}$ fundet ved best-fit-kurven og ved måling på fjeder og lod.
+For at tjekke om konstanter tager de forventede værdier, vil sammenligne værdierne for $\sqrt{\frac{k}{m}}$ fundet ved best-fit-kurven og ved måling på fjeder og lod.
 
 Værdierne fra best-fit-kurven der kan ses i tabel \ref{tabel: bestfitkurver forsog 1}, er meget ens, og jeg vil derfor bare bruge et gennemsnit af dem. 
 Dette gennemsnit bliver da ca. $7.68s^{-1}$.
 
 Massen af loddet og fjederkonstanten har jeg begge bestemt individuelt. 
-Fjederkonstanten kender jeg som $3.6\frac{N}{m}$, hvilket ses længere oppe i dette afsnit. 
+Fjederkonstanten kender jeg som $3.6\frac{N}{m}$ (se tidligere i dette afsnit). 
 Massen er lidt mindre ligetil. 
 Vi kender godt nok massen af loddet fra tabel \ref{tabel: Masser forsog 1}. 
 Der er dog det problem, at det ikke kun er loddet, der svinger i bevægelsen, men også en del af fjederen. 
@@ -138,31 +138,41 @@ Vi kan derfor lave en masse $m=m_{lod}+\frac{1}{3}\cdot m_{fjeder}=32.45g+\frac{
 Dermed kan vi bestemme en værdi for $\sqrt{\frac{k}{m}}$ som:
 $$\sqrt{\frac{k}{m}}=\sqrt{\frac{3.6\frac{N}{m}}{58.15g}}=\sqrt{0.062\frac{\frac{N}{m}}{g}}=\sqrt{0.062\frac{1000\frac{g\cdot m}{s^2\cdot m}}{g}}=\sqrt{62s^{-2}}=7.87s^{-1}$$
 
-Disse to værdier ser ud til at stemme rimelig godt overens, da de har en forholdsvist lille differens. 
+Værdien fået ved best-fit ser ud til at stemme rimelig godt overens med den målte, da de har en forholdsvist lille differens på $0.19s^{-1}$. 
 
 
 
 \subsubsection{Vurdering af data}\label{exp1: Vurdering af data}
-Det første der er værd at bemærke, er at værdierne af $\sqrt{\frac{k}{m}}$ ligger meget tæt på hinanden. 
-Dette stemmer godt overens med teorien, da denne værdi ikke bør være afhængig af hvor meget der energi der bliver tilførst systemet til at starte med, men kun hvilken masse lodet har og hvilken fjederkonstant fjederen har. 
-Da forsøget er lavet med samme fjeder og samme lod, må man forvente samme værdi, hvilket også er det vi observerer, da der kun er en forskel på $7.734s^{-1}-7.632s^{-1}=0.102s^{-1}$ på den største og mindste værdi, hvilket er relativt lidt i forhold til de ca. 7 en halv tallene ligger på.
+
+\begin{itemize}
+
+\item Værdierne af $\sqrt{\frac{k}{m}}$ ligger meget tæt på hinanden. 
+Dette stemmer godt overens med teorien, da denne værdi ikke bør være afhængig af hvor meget energi der bliver tilførst systemet til at starte med, men kun lodets masse har og fjederens fjederkonstant. 
+Da forsøget er lavet med samme fjeder og samme lod, må man forvente samme værdi, hvilket også er det vi observerer, da der kun er en forskel på $7.734s^{-1}-7.632s^{-1}=0.102s^{-1}$ på den største og mindste værdi, hvilket er relativt lidt i forhold til de ca. $7.5$ tallene ligger på.
 
 
 
-Derudover er det værd at bemærke de meget lave afvigelser. 
-Den gennemsnitlige afvigelse ligger imellem $0.3136cm$ og $0.4427cm$ i forhold til amplituder på helt op til $8.944cm$. 
+\item Afvigelserne er meget lave. 
+Den gennemsnitlige afvigelse ligger imellem $0.3136cm$ og $0.4427cm$ i forhold til amplituderne på helt op til $8.944cm$. 
 Dette må anses som forholdsvist små afvigelser i forhold til hele bevægelsen.
 
-Det ses også at værdien af $\sqrt{\frac{k}{m}}$ i den fundne best-fit kurver er meget end med den værdi man kan finde ved at veje lodet og bestemme fjederkonstanten.
 
-Der er meget stor variation af værdien af $\phi$.
+
+\item Værdien $\sqrt{\frac{k}{m}}$ i de fundne best-fit kurver er meget tæt på den værdi man kan finde ved at veje lodet og bestemme fjederkonstanten.
+
+
+
+\item Der er meget stor variation af værdien af $\phi$.
 Dette er dog ikke noget problem, da denne størrelse for det første bare er afhængig af hvornår i bevægelsen målingen er startet.
 Derudover har den så store udsving fordi sinusfunktionen er periodisk med en periode på $2\pi$.
 Vi kunne derfor have fjernet eller tilføjet $2\pi$ et heltalligt antal gange, uden at have påvirket grafen det mindste. 
 Derfor er forskellene i værdier ikke bekymrende. 
 
+
+\end{itemize}
+
 \subsection{Konklusion}
-Dette forsøg passer enormt godt på teorien. 
+Dette forsøg passer godt med teorien. 
 Der er høje forklaringsgrader ved brug af best-fit kurver, og de værdier som kommer ud med de forskellige konstanter, passer godt overens med vores teori.
 Det forekommer derfor sandsynligt at bevægelsen tilnærmelsesvist opfylder hypotesen og dermed differentialligningen \ref{eq: exp1 hypotese}.
 

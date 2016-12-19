@@ -1,22 +1,25 @@
-\section{Forsøg: Svingning af lod i luft i længere tid}
+\section{Forsøg 2: Svingning af lod i luft i længere tid}
 
 \subsection{Forsøgsbeskrivelse}
 Dette forsøg forløber nøjagtigt på samme måde som forsøg 1 (se forsøgsbeskrivelse \ref{exp1: Beskrivelse af experiment}).
-Der er dog den forskel at forsøget forløber over $50$ sekunder og at forsøget kun er gentaget 5 gange. 
+Der er dog den forskel at forsøget forløber over $50$ sekunder. 
+Derfor er forsøget også kun gentaget 5 gange. 
 
 Jeg gør brug af samme fjeder og lod som i forsøg 1.
 
 \subsection{Hypotese}\label{exp2: Hypotese}
-Da dette forsøg forløber over længere tid end det forrige forsøg, forventes det at vindmodstanden vil spille en markant rolle. 
-Derfor vil vi forvente at det følger en anden differentialligning hvor dæmpningsledet er med, nemlig:
-$m\cdot x''= -\mu \cdot x' - k\cdot x$
-eller omskrevet til den form som vi har behandlet matematisk:
+Da dette forsøg forløber over længere tid end det forrige forsøg, forventes det at vindmodstanden vil spille en markant større rolle. 
+Derfor vil vi forvente at bevægelsen følger en anden differentialligning hvor dæmpningsledet er med, nemlig:
+$m\cdot x''= -\mu \cdot x' - k\cdot x$.
+Eller omskrevet til den form som vi har behandlet matematisk:
+
 $$x''+ \frac{\mu}{m} \cdot x' + \frac{k}{m}\cdot x=0$$
+
 Dette kan vi  se er en andenordens homogen lineær differentialligning.
 Vi kan derfor opskrive en karakterligning for den:
 $r^2 + \frac{\mu}{m} r + \frac{k}{m} = 0$, med rødderne $r = \dfrac{-\frac{\mu}{m} \pm \sqrt{\frac{\mu^2}{m^2}-4\frac{k}{m}}}{2}=
 -\frac{\mu}{2m}  \pm   \frac{\sqrt{-\frac{\mu^2}{m^2}+4\frac{k}{m}}}{2}$.
-Vi vil nu gerne bruge disse rødder til at opskrive en forventet funktion til beskrivelse af bevægelsen. 
+Vi kan nu bruge disse rødder til at opskrive en forventet funktion til beskrivelse af bevægelsen. 
 Dog har vi det problem, at vi ikke ved om rødderne bliver komplekse eller reelle, da dette afhænger af hvor stor en værdi $\mu$ er i forhold til $k$.
 Hvis vi har at størrelsen $\frac{\mu^2}{m^2}-4\frac{k}{m}$ er positiv, så må vi have reelle rødder, hvorimod vi må have komplekse hvis den er negativ. 
 Der er selvfølgelig også grænsetilfældet hvor det er lig $0$, men da dette er højest usandsynligt vil jeg ikke behandle dette. 
@@ -29,7 +32,7 @@ Så får vi $\sqrt{(-1)(-\frac{\mu^2}{m^2}+4\frac{k}{m})}$.
 Vi kan da tage $-1$ ud af kvadratrodstegnet ved at tage kvadratroden af det. 
 Så får vi $\sqrt{-\frac{\mu^2}{m^2}+4\frac{k}{m}}i$
 
-I det vores løsninger til karakterligningen forventes at være komplekse, kan vi da forvente en bevægelse der kan beskrives ved:
+Idet vores løsninger til karakterligningen forventes at være komplekse, kan vi da forvente en bevægelse der kan beskrives ved:
 $$e^{-\frac{\mu}{2m} \cdot x}A\sin(\frac{\sqrt{-\frac{\mu^2}{m^2}+4\frac{k}{m}}}{2} \cdot x+\phi)$$
 \subsection{Data}
 Rådata til dette forsøg er vedlagt i filen ''Forsøg 2 - Data.pdf'' og data til bestemmelse af fjederkonstanten ligger i filen ''Forsøg 1 og 2 fjederkonstant - Data.pdf''. 
@@ -42,7 +45,7 @@ Dataen er præsenteret på præcis samme måde som i forsøg 1, se derfor afsnit
 \subsubsection{Bestemmelse af fjederkonstant}
 Da fjederen er den samme som i forsøg 1, er fjederkonstanten bestemt på samme måde som i afsnit \ref{exp1: databehandling afsnit}, og er derfor $3.6\frac{N}{m}$.
 
-For at tjekke om dataen rent faktisk opfører sig som opfører sig som forventet, vil jeg forsøge at lave best-fit kurver på formen:
+For at tjekke om det opsamlede data opfører sig som det forventede, laver jeg best-fit kurver på formen:
 $$e^a \cdot A \cdot \sin (bx+\phi)+s_0$$
 Her står $a$ i stedet for konstanten $-\frac{\mu}{2m}$ og $b$ i stedet for 
 $\frac{\sqrt{-\frac{\mu^2}{m^2}+4\frac{k}{m}}}{2}$.
@@ -82,10 +85,10 @@ Grunden til den forskel som ses på figur \ref{fig: Fejlkurve exp2}, er formentl
 Med den teori vi har om vindmodstand fra afsnit \ref{teori:vindmodstand}, vil det være et logisk gæt at sige at vi skal have en anden eksponent på vindmodstanden end 1. 
 
 Da teorien siger, at vi bør have en eksponent på 2, kan denne forskel måske tilskrives at modellen ikke har den rigtige eksponent.
-Vi kan dog ikke, som vi så i afsnit \ref{teori: Den ikke-linear andenordens ligning}, kan vi ikke finde en symbolsk løsning til ligningen med eksponent 2, og vi kan derfor ikke lave et curve-fit. 
+Som vi så i afsnit \ref{teori: Den ikke-linear andenordens ligning}, kan vi ikke finde en symbolsk løsning til ligningen med eksponent 2, og vi kan derfor ikke lave et curve-fit. 
 Vi kan dog godt lave numeriske løsninger for de to modeller hvor deres koefficienter er de samme, og så observere om modellen med potens på opfører sig på samme måde i forhold til den lineære model som mit data gør i forhold til den lineære model.
 
-Den lineære model vi vil kigge på vil klart nok være på nedenstående form, da det er denne vi har kigget på hele vejen igennem:
+Den lineære model vi vil kigge på vil være på nedenstående form, da det er denne vi har kigget på hele vejen igennem:
 
 \begin{equation}
 mx'' + \mu x' + kx = 0
@@ -93,11 +96,11 @@ mx'' + \mu x' + kx = 0
 \end{equation}
  
 
-Før vi kan opsætte en den ikke-lineære differentialligningsmodel, er vi nødt til at tackle det problem der opstår i, at vi mister fortegnet på $x'$, i det at vi sætter det i anden.
+Før vi kan opsætte en ikke-lineær differentialligningsmodel, er vi nødt til at tackle det problem der opstår i, at vi mister fortegnet på $x'$, idet vi sætter det i anden.
 Dette problem kan vi løse med at gange størrelsen $\frac{x'}{|x'|}$ på leddet. 
 Denne størrelse har egenskaben at den er positiv hvis $x'$ er positiv og negativ hvis $x'$ er negativ. 
 Derudover er den altid numerisk lig 1, og derfor kan vi frit gange den på, uden at gøre resultatet numerisk større eller mindre. 
-Det eneste problem det skaber er at størrelsen er udefineret når $x'=0$, men dette er ikke et stort problem når man laver numeriske løsninger, da man med meget lille sandsynlighed vil ramme netop 0, men oftere nogle meget lange kommatal. 
+Det eneste problem det skaber er at størrelsen er udefineret når $x'=0$, men dette er ikke et stort problem når man laver numeriske løsninger, da man med meget lille sandsynlighed vil ramme netop 0, men vil ramme små tal der er meget tæt på, men sjældent lig med 0. 
 
 Vi kan nu opsætte den ikke-lineære differentialligning, hvor $x'$ er sat i anden potens:
 
@@ -123,7 +126,7 @@ På figur \ref{fig: numeriske solutions} kan man se de numeriske løsninger.
 
 \end{figure}
 
-Hvis vi nu betragter figur \ref{fig: Fejlkurve exp2} med figur \ref{fig: numeriske solutions}, så ser vi, at de er meget ens. 
+Hvis vi nu sammenligner figur \ref{fig: Fejlkurve exp2} med figur \ref{fig: numeriske solutions}, så ser vi, at de er meget ens. 
 Den blå kurve, der har det mindste udsving, ligner selvfølgelig best-fit-kurven på figur \ref{fig: Fejlkurve exp2}, da de er dannet fra den samme differentialligning. 
 Det der er interessant, er at den røde kurve forholder sig på den samme måde til den blå på figur \ref{fig: numeriske solutions}, som mit data forholder sig til best-fit-kurven på figur \ref{fig: Fejlkurve exp2}. 
 Dette tyder nemlig på at den ikke-lineære model ville have kunnet beskrive mit datasæt bedre, da det opfører sig på samme måde som mit data i forhold til best-fit-kurverne. 
@@ -134,7 +137,7 @@ Med samme årsag kan vi også begrunde de varierende værdier af $a$ der ses i t
 
 
 \subsection{Konklusion}
-Den lineære homogene andenordens differentialligning er en forholdsvist god model til at beskrive bevægelsen, men den er ikke perfekt. 
+Den lineære homogene andenordens differentialligning er en forholdsvis god model til at beskrive bevægelsen, men den er ikke perfekt. 
 Den kurve der produceres fra differentialligningen har træk der minder meget om den rigtige kurve, men jo længere tid der går, jo dårligere viser det sig at den beskriver bevægelsen. 
-Det viser sig også, at ikke-lineær differentialligningsmodel (ligning \ref{eq: diff i anden}) hvor dæmpningsledet er i anden, beskriver bevægelsen bedre, specielt når vi kigger på svingninger i længere tid.
+Det viser sig også, at en ikke-lineær differentialligningsmodel (ligning \ref{eq: diff i anden}) hvor dæmpningsledet er i anden, beskriver bevægelsen bedre, specielt når vi kigger på svingninger i længere tid.
 
