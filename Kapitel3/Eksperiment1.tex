@@ -26,8 +26,8 @@ Disse materialer blev brugt til forsøget:
 
 
 
-Før selve udførslen af forsøget, bestemmer jeg en fjederkonstant for den fjeder jeg arbejder med. 
-Dette gøres ved at måle samhørende værdier at udstrækning af fjederen og hvor stor en kraft den trækker med. 
+Før selve udførslen af forsøget, bestemmer jeg en fjederkonstant for den fjeder, jeg arbejder med. 
+Dette gøres ved at måle samhørende værdier af udstrækning af fjederen og hvor stor en kraft den trækker med. 
 
 I dette forsøg har jeg opsat et lod i en fjeder, som set på figur \ref{fig:Forsogsopsaetning 1}.
 Derefter har jeg sat loddet i svingninger og målt loddets position med ultralydsensoren i en periode på $10$ sekunder. 
@@ -35,17 +35,19 @@ Jeg gentog dette forsøg 10 gange.
 
 
 \subsection{Hypotese}\label{exp1: Hypotese}
-Da dette forsøg forløber over forholdsvist kort tid, forventer jeg at man betragte denne bevægelse som om den ikke er dæmpet, da dæmpningsledet vil være forholdvist småt. 
+Da dette forsøg forløber over forholdsvist kort tid, forventer jeg at man betragte denne bevægelse som om den ikke er dæmpet, da dæmpningsledet vil være forholdvist småt og vil virke i kort tid. 
 Dermed forventes differentialligningen 
 $$m\cdot x'' = -k \cdot x$$
 at være opfyldt, jvf. afsnit \ref{teori: Opstilling ligning uden dampning}.
 Dette kan omskrives til $m\cdot x'' + k\cdot x=0$, hvilket vi ser er en andenordens lineær homogen differentialligning. 
 Vi kan derfor bestemme en karakterligning som $mr^2 + k = 0 \Rightarrow r^2 + \frac{k}{m} = 0$ og dermed får vi $r = \frac{\pm \sqrt{-4\frac{k}{m}}}{2}=\pm\sqrt{\frac{k}{m}}i$.
 Dermed skal vi have fat i den løsning af differentialligningen hvor løsningerne til karakterligningen er komplekse. 
-Vi får da at løsningen skal være på formen (se afsnit \ref{teori: Komplekse losninger i karakterligningen}:
+Vi får da at løsningen skal være på formen (se afsnit \ref{teori: Komplekse losninger i karakterligningen}):
+
 $$y(x) = e^{ax}A\sin(bx+\phi) \text{ hvor rødderne i karakterligningen er } r = a \pm bi$$
-Vi ser dog her at rødderne i vores karakterligning ikke har nogen realdel, og dermed får vi at $e^{ax}=e^{0x}=1$.
-Da $b=\sqrt{\frac{k}{m}}$ forventer vi derfor at bevægelsen vil kunne beskrives som 
+
+Vi ser dog her, at rødderne i vores karakterligning ikke har nogen realdel, og dermed får vi at $e^{ax}=e^{0x}=1$.
+Da $b=\sqrt{\frac{k}{m}}$ forventer vi derfor, at bevægelsen vil kunne beskrives som 
 \begin{equation}
 x(t)=A\sin (\frac{k}{m}t+\phi)
 \label{eq: exp1 hypotese}
@@ -56,9 +58,9 @@ hvor $\phi$ er en eller anden konstant.
 
 \subsection{Data}\label{exp1: Data}
 \subsubsection{Svingning}
-Data til dette forsøg er vedlagt som bilag i filen ''Forsøg 1 - Data.pdf''
-Denne fil indeholder alt rådata opsamlet af ultralydsensoren i de 10 forsøg (OBS. filen er $130$ sider lang da der er blevet opsamlet $40$ målinger i sekundet). 
-Forsøg nummer 10 er placeret først grundet måden mit dataopsamlingsprogram fungerer på.
+Data til dette forsøg er vedlagt som bilag i filen ''Forsøg 1 - Data.pdf''.
+Denne fil indeholder alt rådata opsamlet af ultralydsensoren i de 10 forsøg (OBS. filen er $130$ sider lang, da der er blevet opsamlet $40$ målinger i sekundet). 
+Forsøg nummer 10 er placeret først, grundet måden mit dataopsamlingsprogram fungerer på.
 
 \subsubsection{Fjederkonstant}\label{exp1: Fjederkonstant}
 Ydermere er der vedlagt en fil ved navn ''Forsøg 1 og 2 fjederkonstant - Data.pdf''.
@@ -84,7 +86,7 @@ Lod & $32.45$ \\
 
 \subsection{Databehandling}\label{exp1: databehandling afsnit}
 \subsubsection{Fjederkonstant}\label{databehandling: tyk fjeder fjederkonstant}
-For at finde en fjederkonstant for fjederen der bliver brugt til forøget, har jeg taget de sammenhørende værdier af fjederkraft og udstrækning og plottet dem i kraft som afhængig og udstrækning som uafhængig variabel. 
+For at finde en fjederkonstant for fjederen der bliver brugt til forøget, har jeg taget de sammenhørende værdier af fjederkraft og udstrækning og plottet dem med kraft som afhængig og udstrækning som uafhængig variabel. 
 Derefter har jeg lavet en best-fit lineær sammenhæng. 
 Denne havde en forholdsvist lav RMSE på $0.044N$, og derfor virker dataen pålidelig. 
 Vi må da have fjederkonstanten som hældningen på dette plot, i dette tilfælde $3.6\frac{N}{m}$.
@@ -94,7 +96,7 @@ Den tilhørende graf samt best-fit plot kan ses i bilaget "Forsøg 1 - grafer.pd
 
 \subsubsection{Best-fit kurver}\label{exp1: Best-fit kurver}
 For at tjekke hvor godt hypotesen holder, vil jeg forsøge at lægge få min computer til at lave en best-fit kurve udfra funktionen $x(t)=A\sin (\sqrt{\frac{k}{m}}+\phi) + s_0$.
-Det tilføjede $s_0$ for enden skyldes at loddet har hængt en afstand over ultralydsensoren som der skal justeres for. 
+Det tilføjede $s_0$ for enden skyldes, at loddet har hængt en afstand over ultralydsensoren, som der skal justeres for. 
 
 I tabel \ref{tabel: bestfitkurver forsog 1} kan ses værdier for $A, \sqrt{\frac{k}{m}}, \phi ,s_0$ og så den gennemsnitlige afvigelse målt i meter (RMSE).
 
@@ -130,7 +132,7 @@ Massen af loddet og fjederkonstanten har jeg begge bestemt individuelt.
 Fjederkonstanten kender jeg som $3.6\frac{N}{m}$, hvilket ses længere oppe i dette afsnit. 
 Massen er lidt mindre ligetil. 
 Vi kender godt nok massen af loddet fra tabel \ref{tabel: Masser forsog 1}. 
-Der er dog det problem, at det ikke kun er loddet der svinger i bevægelsen, men også en del af fjederen. 
+Der er dog det problem, at det ikke kun er loddet, der svinger i bevægelsen, men også en del af fjederen. 
 I teorien er det ca. $\frac{1}{3}$ af fjederens masse der skal regnes med i bevægelsen\refFysA{300}.
 Vi kan derfor lave en masse $m=m_{lod}+\frac{1}{3}\cdot m_{fjeder}=32.45g+\frac{77.09g}{3}=58.15g$. 
 Dermed kan vi bestemme en værdi for $\sqrt{\frac{k}{m}}$ som:
@@ -142,7 +144,7 @@ Disse to værdier ser ud til at stemme rimelig godt overens, da de har en forhol
 
 \subsubsection{Vurdering af data}\label{exp1: Vurdering af data}
 Det første der er værd at bemærke, er at værdierne af $\sqrt{\frac{k}{m}}$ ligger meget tæt på hinanden. 
-Dette stemmer godt overens med teorien da denne værdi ikke bør være afhængig af hvor meget der energi der bliver tilførst systemet til at starte med, men kun hvilken masse lodet har og hvilken fjederkonstant fjederen har. 
+Dette stemmer godt overens med teorien, da denne værdi ikke bør være afhængig af hvor meget der energi der bliver tilførst systemet til at starte med, men kun hvilken masse lodet har og hvilken fjederkonstant fjederen har. 
 Da forsøget er lavet med samme fjeder og samme lod, må man forvente samme værdi, hvilket også er det vi observerer, da der kun er en forskel på $7.734s^{-1}-7.632s^{-1}=0.102s^{-1}$ på den største og mindste værdi, hvilket er relativt lidt i forhold til de ca. 7 en halv tallene ligger på.
 
 
@@ -151,10 +153,16 @@ Derudover er det værd at bemærke de meget lave afvigelser.
 Den gennemsnitlige afvigelse ligger imellem $0.3136cm$ og $0.4427cm$ i forhold til amplituder på helt op til $8.944cm$. 
 Dette må anses som forholdsvist små afvigelser i forhold til hele bevægelsen.
 
-Det ses også at værdien af $\sqrt{\frac{k}{m}}$ i den fundne best-fit kurver er meget end med den værdi man kan finde ved at veje lodet og bestemme fjederkonstanten. 
+Det ses også at værdien af $\sqrt{\frac{k}{m}}$ i den fundne best-fit kurver er meget end med den værdi man kan finde ved at veje lodet og bestemme fjederkonstanten.
+
+Der er meget stor variation af værdien af $\phi$.
+Dette er dog ikke noget problem, da denne størrelse for det første bare er afhængig af hvornår i bevægelsen målingen er startet.
+Derudover har den så store udsving fordi sinusfunktionen er periodisk med en periode på $2\pi$.
+Vi kunne derfor have fjernet eller tilføjet $2\pi$ et heltalligt antal gange, uden at have påvirket grafen det mindste. 
+Derfor er forskellene i værdier ikke bekymrende. 
 
 \subsection{Konklusion}
 Dette forsøg passer enormt godt på teorien. 
-Der er høje forklaringsgrader ved brug af best-fit kurver og de værdier som kommer ud med de forskellige konstanter, passer godt overens med vores teori.
+Der er høje forklaringsgrader ved brug af best-fit kurver, og de værdier som kommer ud med de forskellige konstanter, passer godt overens med vores teori.
 Det forekommer derfor sandsynligt at bevægelsen tilnærmelsesvist opfylder hypotesen og dermed differentialligningen \ref{eq: exp1 hypotese}.
 
