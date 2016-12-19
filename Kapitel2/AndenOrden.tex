@@ -58,7 +58,7 @@ Jeg indsætter nu funktionen i ligningen:
 \begin{align*}
 y'' + by' + cy 	&= (e^{rx})'' + b\cdot (e^{rx})' + c\cdot e^{rx} \\
 				&= r^2 \cdot e^{rx} + br\cdot e^{rx} + c e^{rx} \\
-				&= e^{rx} (r^2 + br + c)  & \text{Sætter $e^{rx}$ udenfor parantes}\\
+				&= e^{rx} (r^2 + br + c)  & \text{(Sætter $e^{rx}$ udenfor parantes)}\\
 				&= e^{rx} \cdot 0 		& \text{(Da $r$ er en løsning til karakterligningen)}\\
 				&=0
 \end{align*}
@@ -100,8 +100,8 @@ $$f'' = (f')' = (u'e^{r_1 x} + ur_1 e^{r_1 x})' = u''e^{r_1 x} + 2\cdot u' r_1 e
 Da jeg ved, at $f$ er en løsning til differentialligningen, kan jeg opskrive differentialligninen og substituere $f, f'$ og $f''$, med de forskrifter som jeg har fået ved brug af $u$. 
 \begin{align*}
 0 	&= f'' + bf' + cf \\
-	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x}) &\text{(indsætter $f'$ og $f''$)}\\
-	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}&\text{ganger ind i parantes}\\
+	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x}) &\text{(Indsætter $f'$ og $f''$)}\\
+	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}&\text{(Ganger ind i parantes)}\\
 	&= u r_1^2 e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x} + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x}  & \text{(Rokerer rundt på led)}\\
 	&= ue^{r_1 x}(r_1^2  + br_1 + c) + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($ue^{r_1 x}$ udenfor  parantes)}\\
 	&= ue^{r_1 x} \cdot 0+ u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($r_1$ løser karakterligningen\footnotemark)}\\
