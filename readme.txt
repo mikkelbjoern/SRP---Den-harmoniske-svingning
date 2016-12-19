@@ -3,7 +3,8 @@ Dette er en oversigt over hvad der skal besvares i de forskellige kapitler.
 Kapitel 1 - "Opskriv ved hjælp af Newtons 2. lov differentialligninger, der beskriver harmoniske og dæmpede svingninger. Beskriv herunder dæmpningsleddet."
 Kapitel 2 - "Gør matematisk rede for løsningsmetoder til lineære andenordens differentialligninger. Kom ind på ikke lineære andenordens differentialligninger."
 Kapitel 3 - "Udfør eksperimenter med harmoniske og dæmpede svingninger og analyser, hvordan resultaterne kan beskrives matematisk. Diskuter herunder grundigt dæmpningsleddets betydning for overensstemmelsen mellem teori og eksperiment."
-Kapitel 4 - "Perspektiver til anvendelsen af mekaniske svingninger i teknologiske sammenhænge."
+Kapitel 4 - Sammenfatning af kapitel 1-3
+Kapitel 5 - "Perspektiver til anvendelsen af mekaniske svingninger i teknologiske sammenhænge."
 
 
 Ved referencer bruges titler på følgende måder:
