@@ -1,12 +1,12 @@
 \section{Den andenordens lineære homogene differentialligning}
-Det store problem i denne opgave er at bestemme den fuldstændige løsning til differentialligningerne der er beskrevet i afsnit \ref{teori: opsatning af differentialligninger}.
-Disse er kan begge beskrives på formen $y'' + by' + cy = 0$, hvor $b,c \in \mR$ og $y$ er en differentialbel funktion fra de reelle tal over i de reelle tal. 
+Det store problem i denne opgave er, at bestemme den fuldstændige løsning til differentialligningerne der er beskrevet i afsnit \ref{teori: opsatning af differentialligninger}.
+Disse kan begge skrives på formen $y'' + by' + cy = 0$, hvor $b,c \in \mR$ og $y$ er en differentialbel funktion fra de reelle tal over i de reelle tal. 
 Bemærk her at der ikke er et konstantled foran $y''$. 
-Dette gør ikke at vi mister generalitet, da vi altid ville kunne dividere hele ligningen igennem med den konstant der havde stået foran $y''$, og vi ville da have fået det på den ovenstående form. 
+Dette gør ikke, at vi mister generalitet, da vi altid ville kunne dividere hele ligningen igennem, med den konstant der havde stået foran $y''$, og vi ville da have fået det på den ovenstående form. 
 Jeg vil i dette afsnit bestemme den fuldstændige løsning til denne ligning. 
 Mine udledninger her er stærkt inspirerede af Kalkulus\refKalkulus{529-539}. 
 
-Jeg vil først vise et lemma der vil gøre mine udregninger nemmere senere.
+Jeg vil først vise et lemma, der vil gøre mine udregninger nemmere senere.
 
 \begin{lemma}\label{thm: Summen af to losninger er en losning}
 Hvis $g$ og $h$ er løsninger til den lineære andenordens differentialligning, da er $y(x) = C\cdot g(x) + D \cdot h(x)$ også en løsning for alle reelle konstanter $C,D$. 
@@ -14,25 +14,25 @@ Hvis $g$ og $h$ er løsninger til den lineære andenordens differentialligning, 
 
 \begin{proof}
 Antag af $h$ og $g$ er løsninger til den lineære andenordens differentialligning. 
-Vi starter med at indse at $y'=Cg' + Dh'$ og $y'' = Cg'' + Dh''$, ved brug af normale regler for differentiation. 
+Vi starter med at indse at $y'=Cg' + Dh'$ og $y'' = Cg'' + Dh''$, ved brug af sumreglen for differentiation. 
 
 Vi betragter da ligningen med $y$ indsat:
 \begin{align*}
 y'' + by' + cy 	&= (Cg'' + Dh'') + b(Cg' + Dh') + c(Ch + Dh)	& \text{(Egenskaberne beskrevet ovenfor)}\\
-				&= Cg'' + Dh'' + bCg' + bDh' + cCh + cDh		\\
+				&= Cg'' + Dh'' + bCg' + bDh' + cCh + cDh		& \text{(Ganger ind i parantes)}\\
 				&= C(g'' + bg' + cg) + D(h'' + b'h + ch)		& \text{(Sætter udenfor parantes)}\\
 				&= C\cdot 0 + D \cdot 0							& \text{(Udnytter at $g$ og $h$ er løsninger)}\\
 				&= 0 
 \end{align*}
-Da kan vi ses at $y'' + by' + cy = 0$, dermed er $y$ er løsning til differentialligningen.
+Da kan vi se at $y'' + by' + cy = 0$, dermed er $y$ er løsning til differentialligningen.
 \end{proof}
 
 Når vi snakker om lineære andenordens differentialligninger, er koefficienterne helt centrale for den fuldstændige løsning. 
 Det vil vise sig senere, at en tilhørende andengradsligning til en lineær andenordens differentialligning, er helt central. Vi kalder denne for den \textit{karakterligningen}.
 
 \begin{definition}[Karakterligningen]
-Karakterligningen for en lineær andenordens differentialligning $y'' + by' + cy = 0$, er ligningen $r^2 + br + c = 0$. 
-Denne ligning har som bekendt en eller to komplekse løsninger $r_1 = \frac{-b + \sqrt{b^2 - 4c}}{2}$ og $r_2 = \frac{-b - \sqrt{b^2 - 4c}}{2}$. .
+Karakterligningen for en lineær homogen andenordens differentialligning $y'' + by' + cy = 0$, er ligningen $r^2 + br + c = 0$. 
+Denne ligning har som bekendt en eller to komplekse løsninger (bemærk at de reelle tal er indeholdt i de komplekse) $r_1 = \frac{-b + \sqrt{b^2 - 4c}}{2}$ og $r_2 = \frac{-b - \sqrt{b^2 - 4c}}{2}$.
 \end{definition}
 
 Jeg vil i denne udledning kigge på to tilfælde af karakterligningen. 
@@ -41,7 +41,7 @@ Grunden til at jeg ikke kigger på der hvor den har en reel rod, er at det kræv
 
 \subsection{To reelle løsninger af karakterligningen}
 Jeg vil nu kigge på løsninger til den lineære andenordens differentialligning. 
-Først indser jeg at $e^{rx}$ er en løsning til den lineære andenordens differentialligning hvis ellers $r$ er en løsning til den karakterligningen.
+Først indser jeg, at $e^{rx}$ er en løsning til den lineære andenordens differentialligning, hvis $r$ er en løsning til den karakterligningen.
 
 \begin{thm}\label{thm: e^rx er en losning}
 Lad en lineær andenordens differentialligning være på formen $y'' + by' + cy = 0$ og lad $r$ være en løsning til karakterligningen for denne.
@@ -49,7 +49,8 @@ Da er $e^{rx}$ en løsning til differentialligningen.
 \end{thm}
 
 \begin{proof}
-Jeg ser først på funktionen differentieret og dobbelt differentieret. Begge disse kan findes ved normale regler for differentiation: 
+Jeg ser først på funktionen differentieret og dobbelt differentieret. 
+Begge disse kan findes ved reglen for differentiation af den reelle eksponentialfunktion: 
 $(e^{rx})' = r \cdot e^{rx}$ og 
 $(e^{rx})'' = r\cdot (e^{rx})' = r^2 \cdot e^{rx}$.
 
@@ -57,12 +58,12 @@ Jeg indsætter nu funktionen i ligningen:
 \begin{align*}
 y'' + by' + cy 	&= (e^{rx})'' + b\cdot (e^{rx})' + c\cdot e^{rx} \\
 				&= r^2 \cdot e^{rx} + br\cdot e^{rx} + c e^{rx} \\
-				&= e^{rx} (r^2 + br + c) \\
+				&= e^{rx} (r^2 + br + c)  & \text{Sætter $e^{rx}$ udenfor parantes}\\
 				&= e^{rx} \cdot 0 		& \text{(Da $r$ er en løsning til karakterligningen)}\\
 				&=0
 \end{align*}
 
-Da er det vist at $y=e^{rx}$ får differentialligningen til at blive $0$ og at dette derfor er en løsning. 
+Da er vist, at $y=e^{rx}$ får differentialligningen til at blive $0$, og at dette derfor er en løsning. 
 \end{proof}
 
 \begin{thm}\label{thm: Den fuldstandige losning er en losning}
@@ -79,11 +80,11 @@ Den fuldstændige løsning til differentialligningen $y'' + by' + cy = 0$, med e
 \end{thm}
 \begin{proof}
 Det følger af sætning \ref{thm: Den fuldstandige losning er en losning}, at $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ rent faktisk er en løsning. 
-Da mangler jeg bare at vise at hvis der eksisterer en løsning, så er den på netop denne form.
+Da mangler jeg bare at vise, at hvis der eksisterer en løsning, så er den på netop denne form.
 
-Først ses en egenskab omkring rødderne den karakteristiske ligning. 
+Først ses en egenskab omkring løsningerne i karakterligningen. 
 Da vi ved at $r^2 + br + c$ har rødder $r_1$ og $r_2$, ved vi med algebraens fundamentalsætning (denne sætning er ikke vist i denne opgave, da det vil være for omfattende, men beviset kan ses i Kalkulus\refKalkulus{139-140}), at vi kan faktorisere ligningen sådan at: $r^2 + br + c = (r-r_1)(r - r_2) = r^2 -(r_1 + r_2)r + r_1 r_2$. 
-Dermed kan vi se at $r_1 + r_2 = -b$, da disse begge er koefficienter foran $r$. 
+Dermed kan vi se, at $r_1 + r_2 = -b$, da disse begge er koefficienter foran $r$ i hhv. første og sidste udtryk. 
 Denne egenskab vil blive brugt imod slutningen af beviset. 
 
 Vi antager at en funktion $f$ er en løsning til differentialligningen. 
@@ -91,16 +92,16 @@ Da vil jeg vise, at $f$ må være på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2
 
 Jeg introducerer en hjælpefunktion $u = \frac{f}{e^{r_1 x}}$. 
 Ved omskrivning ses da $f = u \cdot e^{r_1 x}$. 
-For at forsimple mine omskrivninger om lidt, vil jeg nu kigge på hvordan $f'$ og $f''$ kan skrives, ud fra $u$.
+For at forsimple mine omskrivninger om lidt, vil jeg nu kigge på, hvordan $f'$ og $f''$ kan skrives ud fra $u$.
 Alle følgende omskrivninger sker ved produktreglen(da både $u$ og $e^{r_1 x}$ er funktioner af $x$):
 $$f' = (u e^{r_1 x})' = u'e^{r_1 x} + ur_1 e^{r_1 x}$$
 $$f'' = (f')' = (u'e^{r_1 x} + ur_1 e^{r_1 x})' = u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}$$
 
-Da jeg ved at $f$ er en løsning til differentialligningen, kan jeg opskrive differentialligninen og substituere $f, f'$ og $f''$, med de forskrifter som jeg har fået ved brug af $u$. 
+Da jeg ved, at $f$ er en løsning til differentialligningen, kan jeg opskrive differentialligninen og substituere $f, f'$ og $f''$, med de forskrifter som jeg har fået ved brug af $u$. 
 \begin{align*}
 0 	&= f'' + bf' + cf \\
-	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x})\\
-	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}\\
+	&= (u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}) + b(u'e^{r_1 x} + ur_1 e^{r_1 x}) + c (u \cdot e^{r_1 x}) &\text{(indsætter $f'$ og $f''$)}\\
+	&= u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x} + bu'e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x}&\text{ganger ind i parantes}\\
 	&= u r_1^2 e^{r_1 x} + bur_1 e^{r_1 x} + cu \cdot e^{r_1 x} + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x}  & \text{(Rokerer rundt på led)}\\
 	&= ue^{r_1 x}(r_1^2  + br_1 + c) + u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($ue^{r_1 x}$ udenfor  parantes)}\\
 	&= ue^{r_1 x} \cdot 0+ u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + bu'e^{r_1 x} & \text{($r_1$ løser karakterligningen\footnotemark)}\\
@@ -116,17 +117,18 @@ Dette er en differentialligning af første orden, som vi allerede har fundet en 
 hvor vi i dette tilfælde har vi $k = -(2r_1 + b)$.
 Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)x}$ hvor $K$ er et vilkårligt reelt tal. 
 Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)x} + C$ hvor $C$ er integrationskonstanten. 
-Vi ser at $\frac{K}{2r_1 + b}$ er en konstant, som vi kan kalde $D$.
+Vi ser at $\frac{K}{2r_1 + b}$ er en reel konstant, som vi kan kalde $D$.
 Da ved jeg også at $f=u\cdot e^{r_1 x}$, jeg kan da ved at indsætte min fundne værdi af $u$, finde en form på $f$:
 \begin{align*}
 f 	&= ue^{r_1 x}\\
-	&= (D e^{-(2r_1 + b)x} + C)e^{r_1 x} \\
-	&= D \cdot e^{(-(2r_1 + b)+r_1)x} + C\cdot e^{r_1 x}\\
+	&= (D e^{-(2r_1 + b)x} + C)e^{r_1 x} &\text{(Indsætter $u$)}\\
+	&= (D e^{-(2r_1 + b)x + r_1 x} + Ce^{r_1 x} &\text{(Ganger $e^{r_1 x}$ ind)}\\
+	&= D \cdot e^{(-(2r_1 + b)+r_1)x} + C\cdot e^{r_1 x}&\text{(Flytter $x$ ud foran parantes)}\\
 	&= D \cdot e^{(-r_1 - b)x} + C\cdot e^{r_1 x}\\
 \end{align*}
 
-Fra start så vi dog sammenhængen at $r_1 + r_2 = -b$ og jeg kan derfor substituere $-b$ ind og få:
-$$f(x) = D \cdot e^{(-r_1 +r_1 + r_2)x} + C\cdot e^{r_1 x}= D \cdot e^{r_2 x} + C\cdot e^{r_1 x}$$
+Fra start så vi sammenhængen at $r_1 + r_2 = -b$, og jeg kan derfor substituere $-b$ ind og få:
+$$f(x) = D \cdot e^{(-r_1 +r_1 + r_2)x} + C\cdot e^{r_1 x}= D \cdot e^{r_2 x} + C\cdot e^{r_1 x} = C\cdot e^{r_1 x} + D \cdot e^{r_2 x}$$
 
-Og da er det netop vist at hvis $f$ er en løsning til differentialligningen, da er det også på formen $D \cdot e^{r_2 x} + C\cdot e^{r_1 x}$.
+Og da er det netop vist, at hvis $f$ er en løsning til differentialligningen, da er det også på formen $C\cdot e^{r_1 x} + D \cdot e^{r_2 x}$.
 \end{proof}
