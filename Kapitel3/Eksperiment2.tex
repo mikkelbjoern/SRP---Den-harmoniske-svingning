@@ -74,12 +74,7 @@ Det ser ud til at der ikke kan findes en passende værdi af $a$, således at bes
 Dette kan ses meget tydeligt ved at kigge på den sidste del af grafen, hvor best-fit-kurven er mindre end den målte data.
 Der kan ses et eksempel på dette på figur \ref{fig: Fejlkurve exp2}.
 
-\begin{figure}[h]
-\center
-\includegraphics[scale=0.5]{Figurer/Kurvefejl}
-\caption{Indzoomet udklip af de sidste ca. $4.5$ sekunder af forsøg E. Det ses her tydeligt  at mit data (rød) har et markant større udsving end best-fit-kurven (sort).}
-\label{fig: Fejlkurve exp2}
-\end{figure}
+
 
 Grunden til den forskel som ses på figur \ref{fig: Fejlkurve exp2}, er formentlig af vores model for vindmodstanden ikke er helt god nok. 
 Med den teori vi har om vindmodstand fra afsnit \ref{teori:vindmodstand}, vil det være et logisk gæt at sige at vi skal have en anden eksponent på vindmodstanden end 1. 
@@ -118,13 +113,6 @@ For at kunne lave den numeriske løsning, skal vi nu bare have nogle værdier af
 Jeg vælger disse så de minder om det jeg har fundet i min databehandling. 
 På figur \ref{fig: numeriske solutions} kan man se de numeriske løsninger. 
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.45]{Figurer/diffligninger}
-\caption{Sammenligning af numeriske løsninger for differentialligninger \ref{eq: standard linear diff}(blå) og \ref{eq: diff i anden}(rød) et stykke henne ad 1.-aksen, med $m=50,k=3.6,\mu=2$}
-\label{fig: numeriske solutions}
-
-\end{figure}
 
 Hvis vi nu sammenligner figur \ref{fig: Fejlkurve exp2} med figur \ref{fig: numeriske solutions}, så ser vi, at de er meget ens. 
 Den blå kurve, der har det mindste udsving, ligner selvfølgelig best-fit-kurven på figur \ref{fig: Fejlkurve exp2}, da de er dannet fra den samme differentialligning. 

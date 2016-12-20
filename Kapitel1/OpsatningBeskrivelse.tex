@@ -1,12 +1,3 @@
-\begin{wrapfigure}{r}{0.4\textwidth}
-\centering
-\opstilling{-1}%Se opstilling.sty i hovedmappen for definition. Ser bedst ud med udgangsposition i -1.
-
-\caption{Skitse af forsøgsopsætning.}
-\label{fig:Basis Forsogsopsaetning}
-\end{wrapfigure} 
-
-
 \section{Forsøgsopsætning}\label{teori: opsatning af differentialligninger}
 Hele denne opgave tager udgangspunkt i et forsøg.
 I forsøget hænges et lod op i en fjeder der opfylder Hookes lov (se \ref{teori:Hooks lov}). 
@@ -33,7 +24,9 @@ Men vi kan da omskrive til en differentialligning ved at udnytte at $F_{fjeder}=
 Derudover ved vi fra Newtons anden lov (se \ref{teori:Newtons anden lov}), at $F_{res}=m\cdot a(t) = m \cdot x''(t)$ 
 (her udnyttes at accelerationen af et objekt er lig dets stedfunktion differentieret dobbelt\refFysA{187}). 
 Dermed får vi ligningen :
-$$m\cdot x''(t)+k\cdot x(t)=0$$ 
+\begin{equation}
+m\cdot x''(t)+k\cdot x(t)=0
+\end{equation}
 som vi ser er en differentialligning i $x(t)$.
 
 \subsubsection{Differentialligning med dæmpning}\label{teori: Opstilling af ligning med dampning}
@@ -41,6 +34,10 @@ Vi kan på samme måde som i forrige afsnit opskrive et udtryk, der beskriver de
 Denne gang skal der bare trækkes et led mere fra på højresiden - nemlig luftmodstanden. 
 Da vi i de fleste bevægelser med lav fart tilnærmelsesvist kan beskrive luftmodstanden som værende proportional med hastigheden\footnotemark(se \ref{teori:vindmodstand}), kan vi skrive den som $- \mu x'(t)$ hvor $\mu$ er en proportionalitetskonstant, og $x'(t)$ er stedfunktionen differentieret (og altså en beskrivelse af hastigheden til tiden $t$\refFysA{187}).
 her får vi altså en differentialligning på formen $m\cdot x''(t)=-k\cdot x(t)-\mu x'(t)$ eller omskrevet:
-$$m\cdot x''(t)+\mu x'(t)+k\cdot x(t)=0$$
+
+\begin{equation}
+m\cdot x''(t)+\mu x'(t)+k\cdot x(t)=0
+\end{equation}
+
 Fremover vil $\mu x(t)$ blive omtalt som \textit{dæmpningsledet}, da det netop er luftmodstanden der gør, at bevægelsen ikke bliver ved for evigt, da den giver anledning til en dæmpning. 
 \footnotetext{Når jeg vælger at bruge hastighed her, så er det fordi, at det er et fortegn på der har betydning. Dette gør, at vi betragter en endimensional vektor, og jeg bruger derfor hastighed i stedet for fart.}

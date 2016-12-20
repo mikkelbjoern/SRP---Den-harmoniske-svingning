@@ -7,23 +7,6 @@ Et andet sted hvor man kan se svingninger af fjedre meget markant er i forbindel
 Det er nemlig sådan at en bils hjul er forbundet til fjedre. 
 En skitse af dette kan ses på figur \ref{fig: Affjedring af bil}.
 
-\begin{wrapfigure}{r}{0.4\textwidth}
-\center
-\begin{tikzpicture}
-\tikzstyle{spring}=[thick,decorate,decoration={zigzag,pre length=0.05cm,post length=0.05cm,segment length=2}]
-
-\draw (-2,0)--(-1,0)--(-1,0) arc [radius=1, start angle=180, end angle= 0]--(1,0)--(3,0);%Bund af bil uden hjul
-
-\draw (3,0) arc [radius=4, start angle=0, end angle = 90] -- (-2,4) ;%Top af bil
-
-\draw[fill=gray, thick] (0,-0.2) circle (0.75) node {Hjul};%hjulet
-\node at (-0.5,2.5) {\huge \textbf{Bil}};
-\draw[spring, blue] (0,0.55)--(0,1) node[above, blue] {\small Fjeder};
-
-\end{tikzpicture}
-\caption{Skitsetegning af fjeder (blå) fastsat til bils hjul.}
-\label{fig: Affjedring af bil}
-\end{wrapfigure}
 
 Fjederen er til for at sørge for at bilen hele tiden fastholder kontakt med vejen - også selvom den kører over en ujævnhed i vejen. 
 Hvis fjederen går i stykker, kan det være meget problematisk. 
@@ -34,7 +17,11 @@ Hvis man betragter denne svingning med den teori der er beskrevet i denne opgave
 Vi er da interesserede i at få svingningen af bilen til at dø ud så hurtigt som muligt. 
 Her arbejder vi ikke med luftmodstand, men derimod med en mekanisk dæmpning. 
 Hvis vi antager at svingningen dæmpes på en måde, således at dæmpningen er proportional med hastigheden af svingningen med en proportionalitetskonstant $\xi$, har vi igen en lineær andenordens homogen differentialligning
-$$mx''(t)+\xi x'(t) + k x(t) = 0$$
+
+\begin{equation}
+mx''(t)+\xi x'(t) + k x(t) = 0
+\end{equation}
+
 hvor $k$ er fjederkonstanten for bilens fjeder, $m$ er bilens masse og $x$ er en funktion af tiden der beskriver hvor højt/lavt bilen befinder sig i forhold til sit udgangspunkt.
 
 Da vi er interesserede i at bilen hopper så lidt som muligt, er vi ikke interesserede i en harmonisk svingning. 
@@ -43,7 +30,11 @@ Derfor er man interesserede i at få en god nok kombination af dæmpningskonstan
 
 Vi vil derfor gerne prøve at kigge på karakterligningen. 
 Vi får da en ligning $mr^2 + \xi r + k = 0$ hvilket giver os løsningerne (med andengradslignings løsningsformel):
-$$r = \dfrac{-\xi \pm \sqrt{\xi ^2 - 4mk}}{2m}$$
+
+\begin{equation}
+r = \dfrac{-\xi \pm \sqrt{\xi ^2 - 4mk}}{2m}
+\end{equation}
+
 
 For at vi ikke får komplekse rødder skal vi altså have at størrelsen $\xi ^2 -4mk$ er ikke-negativ, og det skal altså gælde at $0 \leq \xi ^2 -4mk $ eller omskrevet at $4mk \leq \xi ^2 $.
 Her fra er man dog nødt til at vide mere omkring biler og kunne foretage nogle eksperimenter for at kunne fortsætte. 
