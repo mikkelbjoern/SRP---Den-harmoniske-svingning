@@ -8,6 +8,21 @@ Ved den fuldstændige løsning til en differentialligning, refererer jeg fremove
 Nedenfor er et eksempel på en differentialligning. 
 Denne er taget med både som eksempel og for at gøre udregninger mere tilgængelige senere.
 
+\begin{definition}
+Ved en \textit{homogen} differentialligning i variablen $x$, forstås en differentialligning som ikke har et konstantled (et led der ikke ændrer sig med $x$) hvis man tager alle led over på den samme side således at den anden side af lighedstegnet er lig $0$.
+\end{definition}
+
+\newcommand{\LDiff}[1]{a_{#1} \cdot \frac{d^{#1}y}{d x^{#1}}}
+\begin{definition}
+Ved en lineær differentialligning i $y$, forstås en ligning på formen:
+$$\LDiff{n} + \LDiff{n-1} + \LDiff{n-2}+...+\LDiff{2}+\LDiff{1}=a_0$$
+hvor $n$ er et naturligt tal, $y$ er en funktion af $x$, og alle $a$'erne er reelle ikke nødvendigvis forskellige konstanter og $a_n \neq 0$.
+Vi siger da, at differentialligningen har orden $n$.
+
+\end{definition}
+
+
+
 \begin{thm}\label{thm:y'=k*y}
 Lad $y$ være en differentialbel funktion og $k\in \mR$. Da har  differentialligningen $y' = ky$ den fuldstændige løsning \LosEks.
 \end{thm}
