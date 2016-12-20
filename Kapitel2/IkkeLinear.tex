@@ -1,28 +1,28 @@
 \subsection{Den ikke-lineære andenordens homogene differentialligning}
 \label{teori: Den ikke-linear andenordens ligning}
-I det vi indtil videre kun har kigget på den andenordens \textit{lineære} homogene differentialligning, har vi lavet nogle antagelser som gør matematikken pæn, men disse holder dog ofte ikke i fysikkens verden.
-Hvis man ser tilbage på afsnit \ref{teori:vindmodstand} om vindmodstand, har vi faktisk kun lavet matematisk teori der beskriver bevægelse ved lav fart, da vi kun har kigget på, når dæmpningsledet er i første. 
-I afsnittet er det også beskrevet at det er en bedre model, specielt ved høj fart, at regne med at kraften er proportional med vindens fart i anden.
+I det vi indtil videre kun har kigget på den andenordens \textit{lineære} homogene differentialligning, har vi lavet nogle antagelser, som gør matematikken pæn, men disse holder dog ofte ikke i fysikkens verden.
+Hvis man ser tilbage på afsnit \ref{teori:vindmodstand} om vindmodstand, har vi faktisk kun lavet matematisk teori, der beskriver bevægelse ved lav fart, da vi kun har kigget på, når dæmpningsledet er i første. 
+I afsnittet er det også beskrevet, at det er en bedre model, specielt ved høj fart, at regne med at kraften er proportional med vindens fart i anden.
 Dette ville give anledning til en differentiallligning på formen:
 
 $$y'' + b(y')^2 + cy = 0$$
 
 Denne ligning er altså stadig homogen, da den er lig med $0$, men ikke længere lineær. 
 Det viser sig dog, at dette problem er markant sværere at løse, end da dæmpningsledet var i første. 
-Hvis vi kigger tilbage på beviset for sætning \ref{thm: fuldstandig losning}, så er det der fungerer i beviset at vi kan få hevet karakterligningen ud ved omskrivninger. 
+Hvis vi kigger tilbage på beviset for sætning \ref{thm: fuldstandig losning}, så er det, der fungerer i beviset, at vi kan få hevet karakterligningen ud ved omskrivninger. 
 Dette er kun muligt, fordi alle tre led står i første. 
 Havde vi forsøgt samme trick i den ikke-lineære, ville vi have fået en forkert potens på løsningen, og dermed havde vi ikke kunnet nå i mål med beviset. 
 
 Man kunne derfor prøve at løse den med et CAS-værktøj. 
-Ved brug af Maple får jeg to løsninger (en med positivt og en med negativt fortegn, se $\pm$):
+Ved brug af Maple, får jeg to løsninger (en med positivt og en med negativt fortegn, se $\pm$):
 $$\int ^{y \left( x \right) }\!\pm 2\,{\frac {b}{\sqrt {4\,{{\rm e}^{-2\,b{
 \it a}}}{\it C_1}\,{b}^{2}-4\,c{\it a}\,b+2\,c}}}{d{\it a}}-x-{
 \it C_2}=0 \text{ hvor } C_1,C_2 \in \mR
 $$
 Dette har vi ikke redskaberne til at forstå med gymnasiepensum. 
-For så vidt giver integralet og de to konstanter mening, men det at der kun er en øvre grænse, og at grænsen er den funktion vi forsøger at finde, gør at dette nok ikke er en farbar vej til til at finde en løsning. 
+For så vidt giver integralet og de to konstanter mening, men det at der kun er en øvre grænse, og at grænsen er den funktion, vi forsøger at finde, gør, at dette nok ikke er en farbar vej til til at finde en løsning. 
 
 Derfor er der nok kun vejen frem at løse problemet numerisk. 
 Ved en numerisk løsning af en differentialligning forstås, at man kender en værdi på grafen og beregner flere værdier ud derfra.
-Dog skal man når man regner på andenordens differentialligninger kende to sammenhørende værdi af $y$, $y'$ eller $y''$ for at kunne give et entydigt svar\refKalkulus{539}.
+Dog skal man, når man regner på andenordens differentialligninger kende to sammenhørende værdier af $y$, $y'$ eller $y''$ for at kunne give et entydigt svar\refKalkulus{539}.
 Jeg vil forsøge at lave en numerisk løsning senere, når jeg skal behandle data fra mine forsøg. 

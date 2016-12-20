@@ -27,8 +27,8 @@ Vi siger da, at differentialligningen har orden $n$.
 Lad $y$ være en differentialbel funktion og $k\in \mR$. Da har  differentialligningen $y' = ky$ den fuldstændige løsning \LosEks.
 \end{thm}
 \begin{proof}
-Først vil jeg vise at alle funktioner i den påståede fuldstændige løsning er løsninger til differentialligningen.
-Antag at $g$ er en funktion der ligger i \LosEks .
+Først vil jeg vise, at alle funktioner i den påståede fuldstændige løsning er løsninger til differentialligningen.
+Antag, at $g$ er en funktion, der ligger i \LosEks .
 Da er $g=c\cdot e^{kx}$ for et eller andet reelt tal $c$.
 Jeg indsætter da løsningen i ligningen: 
 
@@ -38,13 +38,13 @@ g' &= kg\\
 (c\cdot e^{kx})' &= k\cdot c\cdot e^{kx}\\
 k\cdot c\cdot e^{kx} &= k\cdot c\cdot e^{kx}\\
 \end{align*}
-Jeg ser da, at de to sider er lig hinanden og dermed, at $g$ er en løsning. 
+Jeg ser da, at de to sider er lig hinanden, og dermed at $g$ er en løsning. 
 
-Nu vil jeg vise at hvis en funktion $h$ er en løsning til differentialligningen, da vil $h$ ligge i \LosEks.
-Antag da netop at $h$ er en løsning til differentialligningen. 
+Nu vil jeg vise, at hvis en funktion $h$ er en løsning til differentialligningen, da vil $h$ ligge i \LosEks.
+Antag da netop, at $h$ er en løsning til differentialligningen. 
 Dermed ved vi, at $h'=k\cdot h$.
 Jeg vil nu lave omskrivninger på denne ligning. 
-For at gøre disse omskrivninger nemmere, vil jeg definere en funktion $s=e^{-kx}$, som vi ved at differentiere indser opfylder at $s'=k \cdot e^{-kx} = -ks$.
+For at gøre disse omskrivninger nemmere, vil jeg definere en funktion $s=e^{-kx}$, som vi ved at differentiere indser opfylder, at $s'=k \cdot e^{-kx} = -ks$.
 Ved omskrivning ses da:
 \begin{align*}
 h'&=k\cdot h \\
@@ -56,8 +56,8 @@ hs+c_1 &= 0		&\text{(Ses ved at integrere, $c_1$ er integrationskonstant)}\\
 h&= -c_1 \cdot \frac{1}{s}\\
 h&= -c_1 \cdot e^{kx} &\text{(Ses ved $\frac{1}{s}=\frac{1}{e^{-kx}} = e^{kx}$)}
 \end{align*}
-Da ser vi at $h$ må være på formen en konstant ($-c_1$) ganget med $e^{kx}$, hvilet netop karakteriserer elementer i \LosEks. 
+Da ser vi, at $h$ må være på formen en konstant ($-c_1$) ganget med $e^{kx}$, hvilet netop karakteriserer elementer i \LosEks. 
 Dermed ligger $h$ i \LosEks.
-Da er vist, at hvis en funktion er en løsning til differentialligningen, ligger den også i \LosEks og det er også vist, at hvis et element ligger i \LosEks da er det også en løsning. 
-Dermed er \LosEks den fuldstændige løsning til differentialligningen. 
+Da er vist, at hvis en funktion er en løsning til differentialligningen, ligger den også i \LosEks og det er også vist, at hvis et element ligger i \LosEks\text{,} da er det også en løsning. 
+Dermed er \LosEks\text{} den fuldstændige løsning til differentialligningen. 
 \end{proof}

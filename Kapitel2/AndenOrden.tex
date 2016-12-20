@@ -1,8 +1,8 @@
 \section{Den andenordens lineære homogene differentialligning}
-Det store problem i denne opgave er, at bestemme den fuldstændige løsning til differentialligningerne der er beskrevet i afsnit \ref{teori: opsatning af differentialligninger}.
+Det store problem i denne opgave er at bestemme den fuldstændige løsning til differentialligningerne, der er beskrevet i afsnit \ref{teori: opsatning af differentialligninger}.
 Disse kan begge skrives på formen $y'' + by' + cy = 0$, hvor $b,c \in \mR$ og $y$ er en differentialbel funktion fra de reelle tal over i de reelle tal. 
-Bemærk her at der ikke er et konstantled foran $y''$. 
-Dette gør ikke, at vi mister generalitet, da vi altid ville kunne dividere hele ligningen igennem, med den konstant der havde stået foran $y''$, og vi ville da have fået det på den ovenstående form. 
+Bemærk her, at der ikke er et konstantled foran $y''$. 
+Dette gør ikke, at vi mister generalitet, da vi altid ville kunne dividere hele ligningen igennem med den konstant, der havde stået foran $y''$, og vi ville da have fået det på den ovenstående form. 
 Jeg vil i dette afsnit bestemme den fuldstændige løsning til denne ligning. 
 Mine udledninger her er stærkt inspirerede af Kalkulus\refKalkulus{529-539}. 
 
@@ -13,8 +13,8 @@ Hvis $g$ og $h$ er løsninger til den lineære andenordens differentialligning, 
 \end{lemma}
 
 \begin{proof}
-Antag af $h$ og $g$ er løsninger til den lineære andenordens differentialligning. 
-Vi starter med at indse at $y'=Cg' + Dh'$ og $y'' = Cg'' + Dh''$, ved brug af sumreglen for differentiation. 
+Antag, at $h$ og $g$ er løsninger til den lineære andenordens differentialligning. 
+Vi starter med at indse, at $y'=Cg' + Dh'$ og $y'' = Cg'' + Dh''$, ved brug af sumreglen for differentiation. 
 
 Vi betragter da ligningen med $y$ indsat:
 \begin{align*}
@@ -24,7 +24,7 @@ y'' + by' + cy 	&= (Cg'' + Dh'') + b(Cg' + Dh') + c(Ch + Dh)	& \text{(Egenskaber
 				&= C\cdot 0 + D \cdot 0							& \text{(Udnytter at $g$ og $h$ er løsninger)}\\
 				&= 0 
 \end{align*}
-Da kan vi se at $y'' + by' + cy = 0$, dermed er $y$ er løsning til differentialligningen.
+Da kan vi se, at $y'' + by' + cy = 0$, dermed er $y$ en løsning til differentialligningen.
 \end{proof}
 
 Når vi snakker om lineære andenordens differentialligninger, er koefficienterne helt centrale for den fuldstændige løsning. 
@@ -32,21 +32,21 @@ Det vil vise sig senere, at en tilhørende andengradsligning til en lineær ande
 
 \begin{definition}[Karakterligningen]
 Karakterligningen for en lineær homogen andenordens differentialligning $y'' + by' + cy = 0$, er ligningen $r^2 + br + c = 0$. 
-Denne ligning har som bekendt en eller to komplekse løsninger (bemærk at de reelle tal er indeholdt i de komplekse) $r_1 = \frac{-b + \sqrt{b^2 - 4c}}{2}$ og $r_2 = \frac{-b - \sqrt{b^2 - 4c}}{2}$.
+Denne ligning har som bekendt en eller to komplekse løsninger (bemærk, at de reelle tal er indeholdt i de komplekse), $r_1 = \frac{-b + \sqrt{b^2 - 4c}}{2}$ og $r_2 = \frac{-b - \sqrt{b^2 - 4c}}{2}$.
 
 Da andengradsligninger ofte er opstået ud fra polynomier, vil løsningerne til karakterligningen nogen gange blive refereret til som \textit{rødder}.
 \end{definition}
 
 Jeg vil i denne udledning kigge på to tilfælde af karakterligningen. 
-Der hvor den har to komplekse løsninger og der hvor den har to reelle.
-Grunden til at jeg ikke kigger på der hvor den har en reel rod, er at det kræver at $b^2 = 4c$ (da dette gør diskriminanten til $0$), hvilket er et særligt specialtilfælde, som meget sjældent vil forekomme i fysikken.
+Der hvor den har to komplekse løsninger, og der hvor den har to reelle.
+Grunden til at jeg ikke kigger på, der hvor den har en reel rod, er, at det kræver, at $b^2 = 4c$ (da dette gør diskriminanten til $0$), hvilket er et særligt specialtilfælde, som meget sjældent vil forekomme i fysikken.
 
 \subsection{To reelle løsninger af karakterligningen}
 Jeg vil nu kigge på løsninger til den lineære andenordens differentialligning. 
 Først indser jeg, at $e^{rx}$ er en løsning til den lineære andenordens differentialligning, hvis $r$ er en løsning til den karakterligningen.
 
 \begin{thm}\label{thm: e^rx er en losning}
-Lad en lineær andenordens differentialligning være på formen $y'' + by' + cy = 0$ og lad $r$ være en løsning til karakterligningen for denne.
+Lad en lineær andenordens differentialligning være på formen $y'' + by' + cy = 0$, og lad $r$ være en løsning til karakterligningen for denne.
 Da er $e^{rx}$ en løsning til differentialligningen. 
 \end{thm}
 
@@ -72,13 +72,13 @@ Da er vist, at $y=e^{rx}$ får differentialligningen til at blive $0$, og at det
 $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ er en løsning til differentialligningen $y'' + by' + c = 0$ hvis $r_1$ og $r_2$ er reelle løsninger til dennes karakterligning, hvor $C,D$ er vilkårlige reelle tal.
 \end{thm}
 \begin{proof}
-Vi ser først at $e^{r_1 x}$ og $e^{r_2 x}$ begge hver for sig er løsninger ved brug af sætning \ref{thm: e^rx er en losning}.
-Derefter kan vi bruge sætning \ref{thm: Summen af to losninger er en losning} til at se at disse to løsninger ganget med vilkårlige konstanter også er en løsning.
+Vi ser først, at $e^{r_1 x}$ og $e^{r_2 x}$ begge hver for sig er løsninger ved brug af sætning \ref{thm: e^rx er en losning}.
+Derefter kan vi bruge sætning \ref{thm: Summen af to losninger er en losning} til at se, at disse to løsninger ganget med vilkårlige konstanter også er en løsning.
 Dermed må $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ være en løsning til differentialligningen. 
 \end{proof}
 
 \begin{thm}[Den fuldstændige løsning]\label{thm: fuldstandig losning}
-Den fuldstændige løsning til differentialligningen $y'' + by' + cy = 0$, med en karakterligning med to reelle løsninger $r_1$ og $r_2$ er mængden af alle funktioner på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ hvor $C,D$ er vilkårlige reelle konstanter.
+Den fuldstændige løsning til differentialligningen $y'' + by' + cy = 0$, med en karakterligning med to reelle løsninger $r_1$ og $r_2$ er mængden af alle funktioner på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$, hvor $C,D$ er vilkårlige reelle konstanter.
 \end{thm}
 \begin{proof}
 Det følger af sætning \ref{thm: Den fuldstandige losning er en losning}, at $y = C \cdot e^{r_1 x} + D \cdot e^{r_2 x}$ rent faktisk er en løsning. 
@@ -95,7 +95,7 @@ Da vil jeg vise, at $f$ må være på formen $C \cdot e^{r_1 x} + D \cdot e^{r_2
 Jeg introducerer en hjælpefunktion $u = \frac{f}{e^{r_1 x}}$. 
 Ved omskrivning ses da $f = u \cdot e^{r_1 x}$. 
 For at forsimple mine omskrivninger om lidt, vil jeg nu kigge på, hvordan $f'$ og $f''$ kan skrives ud fra $u$.
-Alle følgende omskrivninger sker ved produktreglen(da både $u$ og $e^{r_1 x}$ er funktioner af $x$):
+Alle følgende omskrivninger sker ved produktreglen (da både $u$ og $e^{r_1 x}$ er funktioner af $x$):
 $$f' = (u e^{r_1 x})' = u'e^{r_1 x} + ur_1 e^{r_1 x}$$
 $$f'' = (f')' = (u'e^{r_1 x} + ur_1 e^{r_1 x})' = u''e^{r_1 x} + 2\cdot u' r_1 e^{r_1 x} + u r_1^2 e^{r_1 x}$$
 
@@ -116,11 +116,12 @@ Lad da en ny hjælpefunktion $h$ være defineret som $h = u'$.
 Da kan vi indsætte $h$ i den anden ligning og få:
 $h' + (2r_1 + b)h = 0$. 
 Dette er en differentialligning af første orden, som vi allerede har fundet en løsning på i sætning \ref{thm:y'=k*y}, 
-hvor vi i dette tilfælde har vi $k = -(2r_1 + b)$.
-Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)x}$ hvor $K$ er et vilkårligt reelt tal. 
-Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)x} + C$ hvor $C$ er integrationskonstanten. 
-Vi ser at $\frac{K}{2r_1 + b}$ er en reel konstant, som vi kan kalde $D$.
-Da ved jeg også at $f=u\cdot e^{r_1 x}$, jeg kan da ved at indsætte min fundne værdi af $u$, finde en form på $f$:
+hvor vi i dette tilfælde har $k = -(2r_1 + b)$.
+Da har vi en fuldstændig løsning for $h$, nemlig $h=K \cdot e^{-(2r_1 + b)x}$, hvor $K$ er et vilkårligt reelt tal. 
+Da kan vi ved at integrere $h$ finde $u$, dermed fås med normal integration af eksponentialfunktionen, at $u = \frac{K}{2r_1 + b} e^{-(2r_1 + b)x} + C$, hvor $C$ er integrationskonstanten. 
+Vi ser, at $\frac{K}{2r_1 + b}$ er en reel konstant, som vi kan kalde $D$.
+Da ved jeg også, at $f=u\cdot e^{r_1 x}$.
+Jeg kan da, ved at indsætte min fundne værdi af $u$, finde en form på $f$:
 \begin{align*}
 f 	&= ue^{r_1 x}\\
 	&= (D e^{-(2r_1 + b)x} + C)e^{r_1 x} &\text{(Indsætter $u$)}\\
@@ -129,7 +130,7 @@ f 	&= ue^{r_1 x}\\
 	&= D \cdot e^{(-r_1 - b)x} + C\cdot e^{r_1 x}\\
 \end{align*}
 
-Fra start så vi sammenhængen at $r_1 + r_2 = -b$, og jeg kan derfor substituere $-b$ ind og få:
+Fra start så vi sammenhængen $r_1 + r_2 = -b$, og jeg kan derfor substituere $-b$ ind og få:
 $$f(x) = D \cdot e^{(-r_1 +r_1 + r_2)x} + C\cdot e^{r_1 x}= D \cdot e^{r_2 x} + C\cdot e^{r_1 x} = C\cdot e^{r_1 x} + D \cdot e^{r_2 x}$$
 
 Og da er det netop vist, at hvis $f$ er en løsning til differentialligningen, da er det også på formen $C\cdot e^{r_1 x} + D \cdot e^{r_2 x}$.
